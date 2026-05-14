@@ -26,7 +26,7 @@ body{
   width:1200px;
   min-height:950px;
   padding:50px;
-  margin: 0 auto 40px;   /* add bottom margin */
+  margin: 0 auto 40px;  
   border-radius:40px;
   background:rgba(255,255,255,0.35);
   backdrop-filter:blur(25px);
@@ -460,26 +460,29 @@ body{
   border: 1px solid rgba(255,255,255,0.85);
   box-shadow: 0 10px 30px rgba(15,23,42,0.10);
 
-  border-top: 4px solid var(--nf-orange);   /* add this line */
+  border-top: 4px solid var(--nf-orange);
 }
-/* Bigger label line: In Development / In Treatment / In Operations */
+
 .ibogaine-points .point h3:first-of-type{
-  font-size: 17px;     /* bigger */
+  font-size: 17px;   
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-/* Smaller subtitle line: Future Therapeutic Development, etc. */
 .ibogaine-points .point h3:last-of-type{
-  font-size: 14px;     /* smaller */
+  font-size: 15px;    
   font-weight: 500;
-  color: #6b7280;
 }
 
 .ibogaine-points .point p{
   font-size: 14px;
   line-height: 1.7;
   color: #4b5563;
+}
+
+.ibogaine-points .point a{
+  color: #ff8c42;
+  text-decoration: none;
 }
 
 /* make it responsive */
