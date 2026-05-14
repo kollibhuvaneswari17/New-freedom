@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>New Freedom Life | Recovery Infrastructure</title>
+    <meta name="description" content="New Freedom Life is building recovery infrastructure across technology, treatment, training, premium real estate, and ibogaine drug development.">
+    <meta name="keywords" content="New Freedom Life, Behavioral Health Infrastructure, Addiction Recovery Technology, Clinical Telemetry, NF-167, Ibogaine Drug Development, Recovery Training, Real Estate Infrastructure, New Freedom Ecosystem">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="New Freedom Life Inc.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="New Freedom Life | Recovery Infrastructure">
+    <meta property="og:description" content="New Freedom Life is building integrated recovery infrastructure across technology, treatment, training, premium real estate, and ibogaine drug development.">
+    <meta property="og:site_name" content="New Freedom Life">
+    <meta property="og:url" content="https://newfreedom.life/">
+    <meta property="og:image" content="https://newfreedom.life/logo.png">
+    <meta property="og:image:alt" content="New Freedom Life logo">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="New Freedom Life | Recovery Infrastructure">
+    <meta name="twitter:description" content="New Freedom Life is building integrated recovery infrastructure across technology, treatment, training, premium real estate, and ibogaine drug development.">
+    <meta name="twitter:image" content="https://newfreedom.life/logo.png">
+    <link rel="canonical" href="https://newfreedom.life/">
+
+    
+    
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "New Freedom Life",
+          "alternateName": "New Freedom Life Ecosystem",
+          "url": "https://newfreedom.life/"
+        },
+        {
+          "@type": "Organization",
+          "name": "New Freedom Life Inc.",
+          "url": "https://newfreedom.life/",
+          "logo": "https://newfreedom.life/logo.png",
+          "description": "Behavioral health infrastructure across technology, treatment, training, real estate, and ibogaine drug development.",
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "general inquiry",
+              "email": "teams@newfreedomlife.com",
+              "url": "https://newfreedom.life/contact.php"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" type="image/jpeg" href="NF Favicon.jpg">
+    <link rel="icon" type="image/png" href="NF Favicon.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* GLOBAL STRUCTURAL FIXES */
+        * { box-sizing: border-box; }
+        
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; width: 100%; }
+
+        nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; width: min(1240px, calc(100% - 40px)); height: 84px; padding: 0 20px; left: 50%; transform: translateX(-50%); border-radius: 0 0 18px 18px; }
+        .brand-logo { 
+            display: flex; align-items: center; gap: 10px; 
+            font-size: 1.1rem; font-weight: 800; color: #fff; 
+            text-transform: uppercase; letter-spacing: 1px; 
+            white-space: nowrap !important; 
+            min-width: max-content; 
+            flex-shrink: 0;
+            height: 100%;
+            line-height: 1;
+        }
+        .brand-logo img { height: 32px; width: auto; flex-shrink: 0; }
+        .brand-logo span { color: var(--accent-gold) !important; }
+
+        .accent-header { 
+            color: #d4af37 !important; 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: 3px; 
+            font-size: 1rem; 
+            display: block; 
+            margin-bottom: 15px; 
+        }
+
+        .section-container {
+            padding: 45px 20px !important; 
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .hero-section {
+            text-align: center; 
+            padding-top: 220px !important; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .hero-bird {
+            width: 100%; 
+            max-width: 450px; 
+            height: auto;
+            margin: 0 auto 40px; 
+            filter: drop-shadow(0 0 50px rgba(0, 210, 255, 0.4));
+        }
+
+        .hero-title {
+            font-size: clamp(2.7rem, 5.3vw, 3.7rem);
+            line-height: 0.98;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            text-wrap: balance;
+        }
+        .hero-title span {
+            display: block;
+        }
+        .hero-title span:first-child {
+            white-space: nowrap;
+        }
+        .hero-subtitle {
+            max-width: 980px;
+            margin: 0 auto 30px;
+            font-size: clamp(1.08rem, 1.8vw, 1.4rem);
+            font-weight: 400;
+            line-height: 1.28;
+            color: #cbd5e1;
+            text-transform: none;
+            letter-spacing: 0;
+            text-wrap: balance;
+        }
+        .hero-subtitle span {
+            display: block;
+        }
+        .hero-intro {
+            max-width: 820px;
+            margin: 0 auto 42px;
+            font-size: clamp(1rem, 1.35vw, 1.14rem);
+            color: #fff;
+            line-height: 1.72;
+        }
+
+        /* NEW PATHWAY BOXES */
+        .pathway-box {
+            background: rgba(0,0,0,0.4); 
+            padding: 40px 30px; 
+            border-radius: 16px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pathway-box:hover { transform: translateY(-5px); }
+        .pathway-user { border: 1px solid rgba(0, 210, 255, 0.3); border-top: 4px solid var(--accent-cyan); }
+        .pathway-user:hover { box-shadow: 0 15px 30px rgba(0, 210, 255, 0.15); }
+        .pathway-partner { border: 1px solid rgba(212, 175, 55, 0.3); border-top: 4px solid var(--accent-gold); }
+        .pathway-partner:hover { box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15); }
+
+        .content-block { margin-bottom: 30px; }
+        .content-block p { margin-bottom: 20px; font-size: 1.15rem; line-height: 1.9; color: var(--text-muted); }
+        
+        .diagram-container {
+            width: 100%; border-radius: 16px; overflow: hidden;
+            border: 1px solid var(--border-card); box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            background: rgba(10, 18, 35, 0.6); display: flex; justify-content: center;
+            align-items: center; padding: 30px 20px; min-height: 300px;
+            position: relative;
+        }
+        
+        .pillar-mini {
+            background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(0, 210, 255, 0.1);
+            padding: 30px; border-radius: 16px; transition: all 0.3s ease; text-align: left;
+        }
+        .pillar-mini:hover { background: rgba(0, 210, 255, 0.05); border-color: rgba(0, 210, 255, 0.3); transform: translateY(-5px); }
+        .pillar-mini h3 { font-size: 1.3rem; color: #fff; margin-bottom: 10px; }
+        .pillar-mini p { font-size: 1rem; line-height: 1.6; margin-bottom: 0; }
+        
+        .highlight-box { border-left: 4px solid var(--accent-cyan); margin: 20px 0; background: rgba(0,0,0,0.2); padding: 30px; border-radius: 0 12px 12px 0;}
+        .highlight-box.gold { border-left-color: var(--accent-gold); }
+
+        .micro-link {
+            display: inline-block;
+            margin-top: 18px;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .micro-link:hover { color: #fff; }
+
+        .overview-stage {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            display: grid;
+            gap: 18px;
+        }
+        .overview-diagram {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            height: 410px;
+            border-radius: 34px;
+            overflow: hidden;
+            isolation: isolate;
+            border: 1px solid rgba(0, 210, 255, 0.16);
+            background:
+                radial-gradient(circle at 50% 48%, rgba(0, 210, 255, 0.18), transparent 24%),
+                radial-gradient(circle at 18% 16%, rgba(11, 86, 163, 0.24), transparent 26%),
+                radial-gradient(circle at 84% 18%, rgba(6, 32, 89, 0.42), transparent 30%),
+                linear-gradient(180deg, rgba(2, 13, 34, 0.96), rgba(0, 7, 24, 0.98));
+            box-shadow:
+                inset 0 0 70px rgba(0, 210, 255, 0.08),
+                0 28px 55px rgba(0, 0, 0, 0.38);
+        }
+        .overview-diagram::before {
+            content: "";
+            position: absolute;
+            inset: 22px;
+            border-radius: 28px;
+            border: 1px solid rgba(255,255,255,0.03);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .overview-diagram::after {
+            content: "";
+            position: absolute;
+            inset: -18%;
+            background:
+                radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.16), transparent 24%),
+                conic-gradient(from 0deg, rgba(0, 210, 255, 0), rgba(0, 210, 255, 0.14), rgba(212, 175, 55, 0.08), rgba(0, 210, 255, 0));
+            animation: aurora-drift 16s linear infinite;
+            opacity: 0.75;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .overview-lines {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .overview-lines line {
+            stroke: rgba(0, 210, 255, 0.34);
+            stroke-width: 2;
+            stroke-dasharray: 10 12;
+            animation: data-flow 10s linear infinite;
+        }
+        .overview-rings {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .overview-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 210, 255, 0.16);
+            transform: translate(-50%, -50%);
+            animation: core-breathe 4.6s ease-in-out infinite;
+        }
+        .overview-ring.one {
+            width: 164px;
+            height: 164px;
+            box-shadow: 0 0 28px rgba(0, 210, 255, 0.08);
+        }
+        .overview-ring.two {
+            width: 218px;
+            height: 218px;
+            opacity: 0.34;
+            animation-delay: 0.9s;
+        }
+        .overview-core-shell {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 148px;
+            height: 148px;
+            margin-left: -74px;
+            margin-top: -74px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        .overview-core-shell::before {
+            content: "";
+            position: absolute;
+            inset: 8px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 210, 255, 0.18);
+            border-top-color: rgba(212, 175, 55, 0.44);
+            border-bottom-color: rgba(0, 210, 255, 0.38);
+            box-shadow: 0 0 24px rgba(0, 210, 255, 0.12);
+            animation: orbit-spin 20s linear infinite;
+        }
+        .overview-core {
+            width: 118px;
+            height: 118px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 210, 255, 0.42);
+            background:
+                radial-gradient(circle at 35% 30%, rgba(77, 221, 255, 0.28), rgba(11, 26, 46, 0.98) 66%),
+                linear-gradient(180deg, rgba(0, 20, 54, 0.9), rgba(0, 8, 26, 0.98));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            font-weight: 800;
+            box-shadow:
+                0 0 32px rgba(0, 210, 255, 0.18),
+                inset 0 0 28px rgba(0, 210, 255, 0.08);
+            animation: core-breathe 4.4s ease-in-out infinite;
+        }
+        .overview-core-kicker {
+            font-size: 0.6rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #9ec9d4;
+            margin-bottom: 8px;
+        }
+        .overview-core strong {
+            display: block;
+            font-size: 1.9rem;
+            line-height: 1;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .overview-node {
+            position: absolute;
+            appearance: none;
+            width: 150px;
+            background: linear-gradient(180deg, rgba(3, 11, 29, 0.96), rgba(1, 6, 18, 0.92));
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 22px;
+            padding: 13px 15px;
+            color: #fff;
+            box-shadow:
+                inset 0 0 18px rgba(255,255,255,0.02),
+                0 14px 30px rgba(0,0,0,0.25);
+            font-family: inherit;
+            text-align: center;
+            backdrop-filter: blur(8px);
+            cursor: pointer;
+            transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
+            z-index: 3;
+        }
+        .overview-node:hover,
+        .overview-node:focus-visible,
+        .overview-node.active {
+            transform: translateY(-6px) scale(1.03);
+            border-color: rgba(0, 210, 255, 0.38);
+            background: linear-gradient(180deg, rgba(5, 19, 46, 0.98), rgba(2, 11, 28, 0.96));
+            box-shadow:
+                inset 0 0 18px rgba(255,255,255,0.03),
+                0 0 24px rgba(0, 210, 255, 0.16),
+                0 18px 34px rgba(0,0,0,0.26);
+            outline: none;
+        }
+        .overview-node.person { top: 24px; left: 50%; margin-left: -75px; }
+        .overview-node.team { top: 92px; right: 12px; }
+        .overview-node.training { bottom: 38px; right: 22px; }
+        .overview-node.treatment { bottom: 38px; left: 22px; }
+        .overview-node.research { top: 92px; left: 12px; }
+        .overview-node-meta {
+            display: block;
+            color: #7fc9d9;
+            font-size: 0.58rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            opacity: 0.86;
+        }
+        .overview-node-label {
+            display: block;
+            font-size: 0.84rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            line-height: 1.3;
+        }
+        .overview-particle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,255,255,1), rgba(0, 210, 255, 0.35));
+            box-shadow: 0 0 14px rgba(0, 210, 255, 0.55);
+            opacity: 0;
+            animation: particle-flight 4.8s linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .overview-particle.p1 { --dx: 0px; --dy: -138px; animation-delay: 0s; }
+        .overview-particle.p2 { --dx: 154px; --dy: -70px; animation-delay: 0.8s; }
+        .overview-particle.p3 { --dx: 126px; --dy: 116px; animation-delay: 1.6s; }
+        .overview-particle.p4 { --dx: -126px; --dy: 116px; animation-delay: 2.4s; }
+        .overview-particle.p5 { --dx: -154px; --dy: -70px; animation-delay: 3.2s; }
+        .overview-detail {
+            padding: 18px 20px;
+            border-radius: 22px;
+            border: 1px solid rgba(0, 210, 255, 0.16);
+            background:
+                linear-gradient(180deg, rgba(8, 17, 38, 0.86), rgba(2, 8, 23, 0.95)),
+                radial-gradient(circle at 12% 30%, rgba(0, 210, 255, 0.12), transparent 36%);
+            box-shadow: inset 0 0 24px rgba(0, 210, 255, 0.04);
+        }
+        .overview-detail-kicker {
+            color: var(--accent-gold);
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .overview-detail h3 {
+            color: #fff;
+            font-size: 1.18rem;
+            margin-bottom: 8px;
+        }
+        .overview-detail p {
+            margin: 0;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .overview-caption {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .journey-tabs {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 26px;
+        }
+        .journey-tab {
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 999px;
+            background: rgba(0,0,0,0.28);
+            color: #fff;
+            padding: 12px 18px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+        }
+        .journey-tab:hover { transform: translateY(-2px); border-color: rgba(0, 210, 255, 0.28); }
+        .journey-tab.active {
+            background: rgba(0, 210, 255, 0.1);
+            border-color: rgba(0, 210, 255, 0.38);
+            box-shadow: inset 0 0 18px rgba(0, 210, 255, 0.08);
+        }
+        .journey-display {
+            background: rgba(0, 0, 0, 0.34);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 22px;
+            padding: 30px;
+            margin-top: 22px;
+        }
+        .journey-pane { display: none; }
+        .journey-pane.active { display: block; animation: fade-up 0.25s ease; }
+        .journey-pane h3 { color: #fff; font-size: 1.5rem; margin-bottom: 14px; }
+        .journey-pane p { font-size: 1.05rem; }
+        .journey-visual {
+            width: 100%;
+            background: rgba(10, 18, 35, 0.7);
+            border: 1px solid rgba(0, 210, 255, 0.16);
+            border-radius: 18px;
+            padding: 24px;
+        }
+        .step-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .step-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 18px;
+        }
+        .step-card strong {
+            display: block;
+            color: #fff;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .step-card span {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .step-arrow {
+            text-align: center;
+            color: var(--accent-cyan);
+            font-size: 1.2rem;
+        }
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+        .model-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 18px;
+        }
+        .model-card strong {
+            display: block;
+            color: #fff;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .model-card span {
+            color: #cbd5e1;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .plain-card {
+            background: rgba(0, 0, 0, 0.38);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+            padding: 28px;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+        .plain-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 210, 255, 0.32);
+            box-shadow: 0 18px 28px rgba(0,0,0,0.28);
+        }
+
+        .ui-mockup { width: 100%; max-width: 350px; background: rgba(10, 18, 35, 0.9); border: 1px solid rgba(0, 210, 255, 0.3); border-radius: 20px; padding: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6), inset 0 0 20px rgba(0,210,255,0.05); font-family: 'Montserrat', sans-serif;}
+        .ui-header { font-size: 0.75rem; color: var(--accent-cyan); font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; border-bottom: 1px solid rgba(0, 210, 255, 0.2); padding-bottom: 10px; text-align: center; }
+        
+        @keyframes pulse-glow { 0%, 100% { filter: drop-shadow(0 0 5px var(--accent-cyan)); } 50% { filter: drop-shadow(0 0 15px var(--accent-cyan)); transform: scale(1.02); } }
+        @keyframes pulse-red { 0%, 100% { filter: drop-shadow(0 0 5px #ff4757); opacity: 0.8; } 50% { filter: drop-shadow(0 0 20px #ff4757); opacity: 1; transform: scale(1.02); } }
+        @keyframes pulse-gold { 0%, 100% { filter: drop-shadow(0 0 5px var(--accent-gold)); } 50% { filter: drop-shadow(0 0 15px var(--accent-gold)); transform: scale(1.05); } }
+        @keyframes spin-cw { 100% { transform: rotate(360deg); } }
+        @keyframes data-flow { to { stroke-dashoffset: -20; } }
+        @keyframes flip-3d { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(360deg); } }
+        @keyframes rise-up { 0% { height: 10%; } 100% { height: 100%; } }
+        @keyframes typing { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        @keyframes fade-up { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes orbit-spin { to { transform: rotate(360deg); } }
+        @keyframes core-breathe { 0%, 100% { transform: scale(1); opacity: 0.72; } 50% { transform: scale(1.06); opacity: 1; } }
+        @keyframes aurora-drift { to { transform: rotate(360deg); } }
+        @keyframes particle-flight {
+            0% { transform: translate(-50%, -50%) scale(0.35); opacity: 0; }
+            16% { opacity: 1; }
+            76% { opacity: 1; }
+            100% { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1); opacity: 0; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .overview-diagram::after,
+            .overview-lines line,
+            .overview-ring,
+            .overview-core-shell::before,
+            .overview-core,
+            .overview-particle {
+                animation: none !important;
+            }
+        }
+
+        .flow-node { background: rgba(0,0,0,0.5); border: 1px solid rgba(0,210,255,0.3); padding: 15px; border-radius: 8px; text-align: center; margin-bottom: 5px; color: #fff; font-size: 0.9rem; font-weight: 600; position: relative;}
+        .flow-node.gold { border-color: var(--accent-gold); color: var(--accent-gold); box-shadow: 0 0 15px rgba(212, 175, 55, 0.1); animation: pulse-gold 3s infinite;}
+        .flow-node.cyan { animation: pulse-glow 3s infinite; }
+        .flow-arrow { text-align: center; color: var(--accent-cyan); margin-bottom: 5px; font-size: 1.2rem; }
+
+        .phone-time { font-size: 3rem; font-weight: 800; color: #fff; text-align: center; line-height: 1; margin-bottom: 5px; }
+        .phone-date { font-size: 1rem; color: var(--text-muted); text-align: center; margin-bottom: 20px; }
+        .notif-card { background: rgba(255, 71, 87, 0.1); border-left: 4px solid #ff4757; padding: 15px; border-radius: 8px; margin-bottom: 15px; animation: pulse-red 2s infinite; }
+        .ekg-line { stroke-dasharray: 10; animation: data-flow 0.5s linear infinite; stroke: #ff4757; fill: none; stroke-width: 2;}
+
+        .stat-box { margin-top: 40px; padding: 40px; background: rgba(0,0,0,0.3); border-radius: 16px; display: flex; align-items: center; justify-content: center; gap: 40px; }
+        .stat-number { text-align: right; border-right: 2px solid var(--accent-cyan); padding-right: 40px; }
+
+        .vitals-circle { width: 120px; height: 120px; border: 4px solid var(--accent-cyan); border-radius: 50%; margin: 0 auto 25px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 0 20px rgba(0, 210, 255, 0.2); position: relative; overflow: hidden;}
+        .radar-sweep { position: absolute; width: 50%; height: 50%; background: linear-gradient(45deg, rgba(0,210,255,0.4), transparent); top: 0; left: 50%; transform-origin: bottom left; animation: spin-cw 2s linear infinite; border-left: 2px solid #00d2ff; }
+        .vitals-circle span.bpm { font-size: 2.5rem; font-weight: 800; color: #fff; line-height: 1; z-index: 2; }
+        .vitals-circle span.label { font-size: 0.7rem; color: var(--accent-cyan); font-weight: 600; letter-spacing: 1px; z-index: 2;}
+        .status-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .status-row span { color: #fff; font-size: 0.85rem; font-weight: 500;}
+        .eq-bar { fill: var(--accent-cyan); transform-origin: bottom; }
+
+        .chart-container { display: flex; align-items: flex-end; gap: 10px; height: 100px; margin-top: 20px; }
+        .bar { flex: 1; background: rgba(0, 210, 255, 0.2); border-radius: 4px 4px 0 0; }
+        .bar:nth-child(1) { height: 30%; } .bar:nth-child(2) { height: 50%; } 
+        .bar:nth-child(3) { height: 70%; background: var(--accent-cyan); animation: pulse-glow 2s infinite; } 
+        .bar:nth-child(4) { height: 100%; background: var(--accent-gold); box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); animation: rise-up 3s ease-out forwards; }
+
+        .wallet-balance { text-align: center; font-size: 2.2rem; font-weight: 800; color: var(--accent-gold); margin-bottom: 5px; display: flex; justify-content: center; align-items: center; gap: 10px;}
+        .spin-coin { width: 25px; height: 25px; background: var(--accent-gold); border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 10px var(--accent-gold); animation: flip-3d 2s linear infinite; }
+        .progress-container { width: 100%; background: rgba(0,0,0,0.5); height: 8px; border-radius: 4px; overflow: hidden; margin-top: 10px;}
+        .progress-bar { width: 80%; height: 100%; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-gold)); background-size: 200% 200%; animation: data-flow 2s linear infinite;}
+        
+        .terminal-text { font-family: monospace; font-size: 0.85rem; color: #cbd5e1; margin-bottom: 12px; }
+        .terminal-text span.ok { color: #10b981; font-weight: bold; }
+        .terminal-text span.sys { color: var(--accent-cyan); font-weight: bold; }
+        .cursor { display: inline-block; width: 8px; height: 12px; background: var(--accent-gold); animation: typing 1s infinite; vertical-align: text-bottom; margin-left: 5px;}
+        .lock-icon { width: 40px; height: 40px; border: 3px solid var(--accent-cyan); border-radius: 5px 5px 20px 20px; display: flex; justify-content: center; align-items: center; margin: 0 auto 20px; position: relative;}
+        .lock-top { width: 20px; height: 15px; border: 3px solid var(--accent-cyan); border-bottom: none; border-radius: 10px 10px 0 0; position: absolute; top: -15px; }
+
+        .hamburger { display: none; flex-direction: column; justify-content: space-between; width: 30px; height: 21px; cursor: pointer; z-index: 101; }
+        .hamburger span { display: block; height: 3px; width: 100%; background-color: var(--accent-cyan); border-radius: 3px; transition: all 0.3s ease; }
+
+        @media (max-width: 1024px) {
+            .grid-2 { gap: 25px; }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); gap: 25px; }
+        }
+
+        @media (max-width: 900px) {
+            nav { width: calc(100% - 20px); padding: 15px 16px; }
+            .brand-logo { font-size: 0.9rem; gap: 8px; letter-spacing: 0px; white-space: nowrap !important; min-width: max-content; }
+            .brand-logo img { height: 24px; }
+
+            .hamburger { display: flex; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: rgba(10, 18, 35, 0.95); backdrop-filter: blur(15px); padding: 20px; text-align: center; gap: 20px; border-bottom: 1px solid var(--border-card); }
+            .nav-links.active { display: flex; }
+        }
+
+        @media (max-width: 768px) {
+            nav { width: calc(100% - 16px); padding: 15px 14px; }
+            .brand-logo { font-size: 0.85rem; gap: 6px; letter-spacing: 0px; white-space: nowrap !important; min-width: max-content; }
+            .brand-logo img { height: 22px; }
+
+            .hamburger { display: flex; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: rgba(10, 18, 35, 0.95); backdrop-filter: blur(15px); padding: 20px; text-align: center; gap: 20px; border-bottom: 1px solid var(--border-card); }
+            .nav-links.active { display: flex; }
+
+            .grid-2, .grid-3, .model-grid { grid-template-columns: 1fr !important; gap: 30px !important; }
+            
+            .stat-box { flex-direction: column; text-align: center; gap: 20px; padding: 25px; }
+            .stat-number { text-align: center; border-right: none; border-bottom: 2px solid var(--accent-cyan); padding-right: 0; padding-bottom: 20px; }
+
+            .hero-section { padding-top: 130px !important; } 
+            .hero-bird { max-width: 220px !important; margin-bottom: 20px !important; }
+            
+            .section-container { padding: 40px 15px !important; }
+            .glass-card { padding: 25px 20px !important; margin-bottom: 0px !important; }
+            
+            h1 { font-size: 2.2rem !important; margin-top: 10px; margin-bottom: 15px; text-align: center; }
+            h2 { font-size: 1.6rem !important; text-align: center; margin-bottom: 15px; }
+            .hero-title { font-size: clamp(2.2rem, 9.5vw, 2.95rem) !important; }
+            .hero-subtitle { max-width: 94%; font-size: 0.98rem; line-height: 1.36; }
+            .hero-intro { max-width: 94%; font-size: 1rem; line-height: 1.72; }
+
+            .btn { width: 100%; display: block; text-align: center; padding: 12px 20px; margin-right: 0 !important; font-size: 0.9rem;}
+            .journey-tabs { flex-direction: column; }
+            .journey-tab { width: 100%; }
+            .journey-display { padding: 24px 18px; }
+            .overview-stage { max-width: 100%; }
+            .overview-diagram { max-width: 360px; height: 350px; }
+            .overview-core-shell { width: 128px; height: 128px; margin-left: -64px; margin-top: -64px; }
+            .overview-core { width: 104px; height: 104px; }
+            .overview-core strong { font-size: 1.7rem; }
+            .overview-node { width: 124px; padding: 10px 10px; border-radius: 18px; }
+            .overview-node.person { top: 18px; margin-left: -62px; }
+            .overview-node.team, .overview-node.research { top: 88px; }
+            .overview-node.training, .overview-node.treatment { bottom: 26px; }
+            .overview-node.training { right: 10px; }
+            .overview-node.treatment { left: 10px; }
+            .overview-node-meta { font-size: 0.5rem; letter-spacing: 1.5px; }
+            .overview-node-label { font-size: 0.7rem; }
+            .overview-particle.p1 { --dx: 0px; --dy: -122px; }
+            .overview-particle.p2 { --dx: 126px; --dy: -58px; }
+            .overview-particle.p3 { --dx: 102px; --dy: 104px; }
+            .overview-particle.p4 { --dx: -102px; --dy: 104px; }
+            .overview-particle.p5 { --dx: -126px; --dy: -58px; }
+            .overview-detail { padding: 16px 16px; }
+            
+            .diagram-container { min-height: auto; padding: 20px 15px; }
+            .ui-mockup { max-width: 100%; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="data-mesh"></canvas>
+
+    <nav>
+        <a class="brand-logo" href="index.php">
+            <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="0196eaa158fcda89dd3a64f7-|49"></script><img src="logo.png" alt="Logo" width="40" height="32" onerror="this.style.display='none';">
+            <div class="brand-wordmark">
+                <span class="brand-main">New Freedom Life</span>
+                <span class="brand-accent">Ecosystem</span>
+            </div>
+        </a>
+        <div class="hamburger" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleMobileMenu()" data-cf-modified-0196eaa158fcda89dd3a64f7-="">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.php" class="active">Home</a></li>
+            <li><a href="branches.php">Ecosystem Branches</a></li>
+            <li><a href="nf167.php">NF-167</a></li>
+            <li><a href="nflc.php">NFLC</a></li>
+            <li><a href="about.php">Leadership</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrapper">
+        
+        <div class="section-container hero-section">
+            <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="0196eaa158fcda89dd3a64f7-|49"></script><img src="logo.png" alt="Hummingbird" class="hero-bird" width="450" height="237" fetchpriority="high" onerror="this.style.display='none';">
+            
+            <h1 class="hero-title"><span>Recovery</span><span>Infrastructure</span></h1>
+            <h2 class="hero-subtitle">
+                <span>Continuous support between sessions.</span>
+                <span>Better intelligence for care teams.</span>
+                <span>An integrated ecosystem for long-term recovery.</span>
+            </h2>
+            
+            <p class="hero-intro">
+                New Freedom Life is building recovery infrastructure that connects NF-167, treatment operations, staff training, physical sites, and ibogaine drug development. The objective is to strengthen continuity of care between formal points of contact and build a more durable recovery model over time.
+            </p>
+            
+            <div class="grid-2" style="max-width: 900px; margin: 0 auto; text-align: left;">
+                
+                <div class="pathway-box pathway-user">
+                    <div>
+                        <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 15px; letter-spacing: 1px; text-align: center;">FOR INDIVIDUALS</h3>
+                        <p style="font-size: 1rem; color: #cbd5e1; margin-bottom: 30px; text-align: center;">
+                            Explore support options for substance use, addiction, or mood-related conditions such as anxiety and depression.
+                        </p>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="https://testflight.apple.com/join/kF7jknnQ" target="_blank" rel="noopener noreferrer" class="btn" style="text-align: center; width: 100%; box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);">Download for iOS</a>
+                        <a href="https://appdistribution.firebase.dev/i/2b2b6b27f1ccd872" target="_blank" rel="noopener noreferrer" class="btn" style="text-align: center; width: 100%; box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);">Download for Android</a>
+                    </div>
+                    
+                </div>
+
+                <div class="pathway-box pathway-partner">
+                    <div>
+                        <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 15px; letter-spacing: 1px; text-align: center;">FOR PROVIDERS</h3>
+                        <p style="font-size: 1rem; color: #cbd5e1; margin-bottom: 30px; text-align: center;">
+                            For clinics, programs, and recovery organizations seeking stronger continuity of care between visits.
+                        </p>
+                    </div>
+                    <a href="contact.php" class="btn" style="background: transparent; border: 1px solid var(--accent-gold); color: var(--accent-gold); text-align: center; width: 100%;">Partner With Us</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="glass-card">
+                <span class="accent-header">Who We Are</span>
+                <h2>A Connected Recovery Ecosystem</h2>
+                <div class="grid-2" style="margin-top: 26px; align-items: start; gap: 30px;">
+                    <div class="content-block">
+                        <p>New Freedom Life is not a single app or a single facility. It is an integrated recovery infrastructure model designed to connect people, care teams, and operating systems rather than leave them in separate silos.</p>
+                        <p>At the center is NF-167, a digital operating layer designed to support the hours between formal sessions, when continuity of care is often weakest.</p>
+                        <p>Around that layer, the ecosystem brings together treatment, training, physical infrastructure, and ibogaine-related drug development so the model can scale with greater continuity, clearer standards, and a longer-term clinical foundation.</p>
+                        <a href="branches.php" class="micro-link">See the Five Branches</a>
+                    </div>
+                    
+                    <div class="diagram-container">
+                        <div class="overview-stage">
+                            <div class="overview-diagram">
+                                <svg class="overview-lines" viewBox="0 0 500 410" preserveAspectRatio="none">
+                                    <line x1="250" y1="205" x2="250" y2="82"></line>
+                                    <line x1="250" y1="205" x2="410" y2="132"></line>
+                                    <line x1="250" y1="205" x2="360" y2="330"></line>
+                                    <line x1="250" y1="205" x2="140" y2="330"></line>
+                                    <line x1="250" y1="205" x2="90" y2="132"></line>
+                                </svg>
+                                <div class="overview-rings">
+                                    <span class="overview-ring one"></span>
+                                    <span class="overview-ring two"></span>
+                                </div>
+                                <span class="overview-particle p1"></span>
+                                <span class="overview-particle p2"></span>
+                                <span class="overview-particle p3"></span>
+                                <span class="overview-particle p4"></span>
+                                <span class="overview-particle p5"></span>
+                                <div class="overview-core-shell">
+                                    <div class="overview-core">
+                                        <span class="overview-core-kicker">Operating Layer</span>
+                                        <strong>NF-167</strong>
+                                    </div>
+                                </div>
+                                <button class="overview-node person active" type="button" data-overview-key="person" aria-pressed="true">
+                                    <span class="overview-node-meta">Human Layer</span>
+                                    <span class="overview-node-label">People in Care</span>
+                                </button>
+                                <button class="overview-node team" type="button" data-overview-key="team" aria-pressed="false">
+                                    <span class="overview-node-meta">Clinical Layer</span>
+                                    <span class="overview-node-label">Care Teams</span>
+                                </button>
+                                <button class="overview-node training" type="button" data-overview-key="training" aria-pressed="false">
+                                    <span class="overview-node-meta">Standards Layer</span>
+                                    <span class="overview-node-label">Training</span>
+                                </button>
+                                <button class="overview-node treatment" type="button" data-overview-key="treatment" aria-pressed="false">
+                                    <span class="overview-node-meta">Care Layer</span>
+                                    <span class="overview-node-label">Treatment</span>
+                                </button>
+                                <button class="overview-node research" type="button" data-overview-key="research" aria-pressed="false">
+                                    <span class="overview-node-meta">Future Layer</span>
+                                    <span class="overview-node-label">Research</span>
+                                </button>
+                            </div>
+                            <div class="overview-detail" aria-live="polite">
+                                <div class="overview-detail-kicker" id="overviewDetailKicker">People in Care</div>
+                                <h3 id="overviewDetailTitle">Support stays alive between formal visits.</h3>
+                                <p id="overviewDetailText">NF-167 helps people stay connected to check-ins, guidance, and faster pathways back to help when risk begins to rise.</p>
+                            </div>
+                            <div class="overview-caption">One operating layer connecting care delivery, clinical context, and long-term ecosystem development.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="glass-card">
+                <span class="accent-header">How It Works</span>
+                <h2>How the Infrastructure Operates</h2>
+                <p style="max-width: 900px; margin-bottom: 0;">
+                    New Freedom Life is designed to support the person in care, strengthen the care team, and connect the larger ecosystem around them.
+                </p>
+
+                <div class="journey-tabs" role="tablist" aria-label="Practical views">
+                    <button type="button" class="journey-tab active" data-journey-target="person" role="tab" id="journey-tab-person" aria-controls="journey-pane-person" aria-selected="true">Person in Care</button>
+                    <button type="button" class="journey-tab" data-journey-target="team" role="tab" id="journey-tab-team" aria-controls="journey-pane-team" aria-selected="false">Care Team</button>
+                    <button type="button" class="journey-tab" data-journey-target="ecosystem" role="tab" id="journey-tab-ecosystem" aria-controls="journey-pane-ecosystem" aria-selected="false">Ecosystem</button>
+                </div>
+
+                <div class="journey-display">
+                    <div class="journey-pane active" data-journey-pane="person" role="tabpanel" id="journey-pane-person" aria-labelledby="journey-tab-person">
+                        <div class="grid-2" style="align-items: start; gap: 28px;">
+                            <div class="content-block">
+                                <h3>For Individuals in Care</h3>
+                                <p>The goal is not to replace treatment. It is to make the time between visits more stable by keeping the person connected to routines, guidance, and support.</p>
+                            </div>
+                            <div class="journey-visual">
+                                <div class="step-stack">
+                                    <div class="step-card">
+                                        <strong>1. Check In</strong>
+                                        <span>Small daily actions help track stress, mood, and recovery consistency.</span>
+                                    </div>
+                                    <div class="step-arrow">↓</div>
+                                    <div class="step-card">
+                                        <strong>2. Get Guidance</strong>
+                                        <span>The system can prompt grounding tools, routines, and next steps when risk starts to rise.</span>
+                                    </div>
+                                    <div class="step-arrow">↓</div>
+                                    <div class="step-card">
+                                        <strong>3. Reach Support Faster</strong>
+                                        <span>When self-guided tools are not enough, the path back to help is meant to be quicker and clearer.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-pane" data-journey-pane="team" role="tabpanel" id="journey-pane-team" aria-labelledby="journey-tab-team" hidden>
+                        <div class="grid-2" style="align-items: start; gap: 28px;">
+                            <div class="content-block">
+                                <h3>For Clinical Teams</h3>
+                                <p>The aim is to give providers and operators more context between sessions, so care is not managed from a weekly snapshot alone.</p>
+                            </div>
+                            <div class="journey-visual">
+                                <div class="step-stack">
+                                    <div class="step-card">
+                                        <strong>1. Establish A Baseline</strong>
+                                        <span>Care starts with a clearer picture of the person’s condition, patterns, and needs.</span>
+                                    </div>
+                                    <div class="step-arrow">↓</div>
+                                    <div class="step-card">
+                                        <strong>2. Watch For Change</strong>
+                                        <span>Signals between visits can show when regulation is improving or when distress is rising.</span>
+                                    </div>
+                                    <div class="step-arrow">↓</div>
+                                    <div class="step-card">
+                                        <strong>3. Respond Earlier</strong>
+                                        <span>Earlier context can support faster outreach, better follow-through, and more consistent care planning.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-pane" data-journey-pane="ecosystem" role="tabpanel" id="journey-pane-ecosystem" aria-labelledby="journey-tab-ecosystem" hidden>
+                        <div class="grid-2" style="align-items: start; gap: 28px;">
+                            <div class="content-block">
+                                <h3>For the Broader Ecosystem</h3>
+                                <p>The larger vision is an integrated model in which technology, ibogaine treatment, training, premium real estate, and drug development reinforce one another.</p>
+                            </div>
+                            <div class="journey-visual">
+                                <div class="model-grid">
+                                    <div class="model-card">
+                                        <strong>Technology</strong>
+                                        <span>NF-167 keeps support connected between visits.</span>
+                                    </div>
+                                    <div class="model-card">
+                                        <strong>Treatment</strong>
+                                        <span>Medically supervised ibogaine care in a premium residential setting.</span>
+                                    </div>
+                                    <div class="model-card">
+                                        <strong>Training</strong>
+                                        <span>Teams can work from shared standards and language.</span>
+                                    </div>
+                                    <div class="model-card">
+                                        <strong>Real Estate</strong>
+                                        <span>Premium recovery property and its fractional ownership layer.</span>
+                                    </div>
+                                    <div class="model-card" style="grid-column: span 2;">
+                                        <strong>Drug Development</strong>
+                                        <span>Ibogaine pathways, analog development, and future therapeutic research.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="glass-card">
+                <span class="accent-header">The Problem</span>
+                <h2>Care Often Loses Continuity When Sessions End</h2>
+                
+                <div class="grid-2" style="margin-top: 30px; align-items: center;">
+                    
+                    <div class="diagram-container">
+                        <div class="ui-mockup" style="border-radius: 40px; border-top: 20px solid #000; border-bottom: 20px solid #000;">
+                            <div class="phone-time">02:14</div>
+                            <div class="phone-date">Tuesday Morning</div>
+                            
+                            <div class="notif-card">
+                                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: #fff;">System Alert</h3>
+                                <p style="margin-bottom: 10px;">Patient entering unmonitored isolation window.</p>
+                                <svg viewBox="0 0 100 20" style="width: 100%; height: 20px;">
+                                    <path d="M0,10 L20,10 L30,0 L40,20 L50,10 L100,10" class="ekg-line"/>
+                                </svg>
+                            </div>
+                            <div class="notif-card" style="background: rgba(0, 210, 255, 0.05); border-left-color: var(--accent-cyan); animation: none;">
+                                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: #fff;">Clinic Status</h3>
+                                <p style="color: var(--accent-cyan);">OFFLINE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <p>One of the central gaps in behavioral health is what happens after the appointment ends. A person may receive a short period of formal care and then spend the rest of the week managing distress, triggers, and isolation without consistent support.</p>
+                        <p>Risk, emotional escalation, and disconnection often grow in that interval. The challenge is not only the condition itself, but the absence of continuity between formal moments of care.</p>
+                        <p>New Freedom Life is built around that gap. The objective is to create more visibility, more continuity, and a clearer path back to support before a crisis deepens.</p>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-number">
+                        <h2 style="font-size: 5rem; color: var(--accent-cyan); margin: 0; line-height: 1; text-shadow: 0 0 30px rgba(0, 210, 255, 0.3);">167</h2>
+                    </div>
+                    <div>
+                        <span style="color: #fff; letter-spacing: 4px; text-transform: uppercase; font-weight: 600; font-size: 1.2rem;">Hours Between Formal Care</span>
+                        <p style="margin-top: 10px; margin-bottom: 0; max-width: 400px; font-size: 1rem; color: #cbd5e1;">A practical way to describe the long interval between traditional points of contact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="glass-card">
+                <span class="accent-header">The Solution</span>
+                <h2>How the Infrastructure Responds</h2>
+                
+                <div class="grid-2" style="margin-top: 30px; align-items: center;">
+                    <div class="content-block">
+                        <p>The objective is to detect rising stress earlier, guide the person toward the next appropriate action, and reconnect them to support faster when self-management is no longer sufficient.</p>
+                        
+                        <div style="margin-top: 40px;">
+                            <div style="border-left: 2px solid var(--accent-cyan); padding-left: 20px; margin-bottom: 25px;">
+                                <h3 style="color: #fff; font-size: 1.2rem;">Detect Change Earlier</h3>
+                                <p style="font-size: 1rem; margin-bottom: 0;">NF-167 is designed to track signals that may indicate rising stress before the person reaches a point of crisis.</p>
+                            </div>
+                            <div style="border-left: 2px solid var(--accent-cyan); padding-left: 20px; margin-bottom: 25px;">
+                                <h3 style="color: #fff; font-size: 1.2rem;">Guide the Next Best Action</h3>
+                                <p style="font-size: 1rem; margin-bottom: 0;">The system can prompt grounding tools, routines, and structured actions that help reduce overwhelm and sustain forward progress.</p>
+                            </div>
+                            <div style="border-left: 2px solid var(--accent-cyan); padding-left: 20px;">
+                                <h3 style="color: #fff; font-size: 1.2rem;">Reconnect Support Faster</h3>
+                                <p style="font-size: 1rem; margin-bottom: 0;">When self-guided support is not enough, the aim is to shorten the distance back to peers, coaches, and clinical care.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="diagram-container">
+                        <div class="ui-mockup" style="border-radius: 40px;">
+                            <div class="ui-header" style="display: flex; justify-content: space-between;"><span>NF-167 OS</span> <span style="color: #10b981;">● LIVE</span></div>
+                            
+                            <div class="vitals-circle">
+                                <div class="radar-sweep"></div>
+                                <span class="bpm">82</span>
+                                <span class="label">BPM</span>
+                            </div>
+
+                            <div style="background: rgba(0,0,0,0.4); padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                                <p style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase;">Vocal Biomarker Analysis</p>
+                                <svg viewBox="0 0 100 20" style="width: 100%; height: 30px;">
+                                    <rect x="10" y="5" width="6" height="15" class="eq-bar eq-1"/>
+                                    <rect x="25" y="2" width="6" height="18" class="eq-bar eq-2"/>
+                                    <rect x="40" y="8" width="6" height="12" class="eq-bar eq-3"/>
+                                    <rect x="55" y="4" width="6" height="16" class="eq-bar eq-4"/>
+                                    <rect x="70" y="10" width="6" height="10" class="eq-bar eq-5"/>
+                                    <rect x="85" y="3" width="6" height="17" class="eq-bar eq-1"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="status-row" style="border-bottom: none;">
+                                <span>Clinical Bridge</span>
+                                <span style="color: var(--accent-cyan); font-size: 0.75rem; font-weight: bold;">SECURE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="glass-card" style="text-align: center;">
+                <span class="accent-header">The Vision</span>
+                <h2>Why This Infrastructure Matters</h2>
+                
+                <div class="grid-2" style="margin-top: 30px; align-items: center;">
+                    <div class="diagram-container">
+                        <div class="ui-mockup">
+                            <div class="ui-header">Longitudinal Dataset</div>
+                            <h3 style="color: #fff; font-size: 1.8rem; margin-bottom: 5px;">Longitudinal</h3>
+                            <p style="font-size: 0.8rem; margin-bottom: 0;">Clinical Dataset Development</p>
+                            <div class="chart-container">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                            <p style="font-size: 0.7rem; color: var(--accent-gold); margin-top: 15px; margin-bottom: 0; text-transform: uppercase; font-weight: 600;">Next-Gen Therapeutics ↑</p>
+                        </div>
+                    </div>
+
+                    <div class="content-block" style="text-align: left;">
+                        <p style="font-size: 1.2rem;">
+                            The long-term vision is a recovery infrastructure model that is more connected, more measurable, and more durable than the standard pattern of short visits followed by isolation. That includes stronger support for people in care, better operating context for care teams, and a more credible foundation for future therapeutic development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="glass-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;">
+                    <div>
+                        <span class="accent-header">The Ecosystem</span>
+                        <h2 style="margin-bottom: 0;">Our Five Core Branches</h2>
+                    </div>
+                    <a href="branches.php" class="btn" style="margin-bottom:0;">View Detailed Architecture</a>
+                </div>
+                
+                <p style="margin-bottom: 40px;">Each branch has a distinct mandate, but all five are designed to reinforce one another within a single operating model.</p>
+
+                <div class="grid-3">
+                    <div class="pillar-mini">
+                        <span style="color: var(--accent-cyan); font-weight: 800; font-size: 2rem; display: block; margin-bottom: 10px;">01</span>
+                        <h3>Technology</h3>
+                        <p>The digital layer that helps keep support connected between visits and gives better context during the 167-hour gap.</p>
+                    </div>
+
+                    <div class="pillar-mini">
+                        <span style="color: var(--accent-cyan); font-weight: 800; font-size: 2rem; display: block; margin-bottom: 10px;">02</span>
+                        <h3>Treatment</h3>
+                        <p>Medically supervised ibogaine care delivered in a premium residential environment.</p>
+                    </div>
+
+                    <div class="pillar-mini">
+                        <span style="color: var(--accent-cyan); font-weight: 800; font-size: 2rem; display: block; margin-bottom: 10px;">03</span>
+                        <h3>Training</h3>
+                        <p>Shared standards and structured training so teams can deliver care more consistently across the ecosystem.</p>
+                    </div>
+
+                    <div class="pillar-mini">
+                        <span style="color: var(--accent-cyan); font-weight: 800; font-size: 2rem; display: block; margin-bottom: 10px;">04</span>
+                        <h3>Real Estate</h3>
+                        <p>Premium recovery real estate and the fractional ownership structure behind it.</p>
+                    </div>
+
+                    <div class="pillar-mini" style="grid-column: span 1; border-color: rgba(212, 175, 55, 0.3);">
+                        <span style="color: var(--accent-gold); font-weight: 800; font-size: 2rem; display: block; margin-bottom: 10px;">05</span>
+                        <h3 style="color: var(--accent-gold);">Drug Development</h3>
+                        <p>Ibogaine pathways, analog development, and future therapeutic research.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="glass-card">
+                <span class="accent-header">In Development</span>
+                <h2>The Economic Layer</h2>
+                <div class="grid-2" style="margin-top: 30px; align-items: center;">
+                    <div class="content-block">
+                        <p>Part of the longer-term model includes an economic participation layer that connects recovery consistency to digital rewards and, over time, broader infrastructure participation. This part of the ecosystem remains in development.</p>
+                        
+                        <div class="highlight-box">
+                            <h3 style="color: #fff;">1. Reward Layer</h3>
+                            <p style="font-size: 1rem; color: #cbd5e1; margin-bottom: 0;">The intention is to recognize measurable recovery consistency through a digital reward structure rather than treating recovery only as an expense line.</p>
+                        </div>
+                        <div class="highlight-box gold">
+                            <h3 style="color: var(--accent-gold);">2. Property Participation</h3>
+                            <p style="font-size: 1rem; color: #cbd5e1; margin-bottom: 0;">The broader framework links participation to the premium property and fractional ownership infrastructure behind the model.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="diagram-container">
+                        <div class="ui-mockup">
+                            <div class="ui-header" style="color: var(--accent-gold); border-color: rgba(212, 175, 55, 0.2);">Property Participation Wallet</div>
+                            <div class="wallet-balance">
+                                <div class="spin-coin"></div>
+                                + 50 NF
+                            </div>
+                            <div style="text-align: center; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 25px;">Utility Coins Earned</div>
+                            <div class="status-row">
+                                <span style="color: var(--text-muted);">Daily Triad</span>
+                                <span style="color: #10b981; font-weight: 800;">VERIFIED ✓</span>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <span style="font-size: 0.7rem; color: #fff; text-transform: uppercase;">Property Equity Progress</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="glass-card" style="text-align: center;">
+                <span class="accent-header">Operating Standards</span>
+                <h2>Institutional-Grade Architecture</h2>
+                <p style="max-width: 800px; margin: 0 auto 40px;">The platform is being designed with secure infrastructure, governed workflows, and long-term scalability in mind so sensitive data and care operations can be handled with greater discipline.</p>
+                
+                <div class="grid-2" style="margin-bottom: 40px; align-items: center;">
+                    <div class="diagram-container" style="min-height: auto;">
+                        <div class="ui-mockup" style="text-align: left; background: #000;">
+                            <div class="lock-icon">
+                                <div class="lock-top"></div>
+                            </div>
+                            <div class="ui-header" style="text-align: left; color: #fff;">System_Terminal_v2.0</div>
+                            <div class="terminal-text"><span class="sys">> Booting Protocol...</span></div>
+                            <div class="terminal-text"><span class="ok">[OK]</span> End-to-End Encryption</div>
+                            <div class="terminal-text"><span class="ok">[OK]</span> HIPAA Telemetry Vault</div>
+                            <div class="terminal-text"><span class="ok">[OK]</span> Solana Smart Contract</div>
+                            <div class="terminal-text" style="color: var(--accent-gold); margin-top: 15px;">> NETWORK SECURE<span class="cursor"></span></div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: left;">
+                        <div class="pillar-mini" style="margin-bottom: 20px;">
+                            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Secure Data Architecture</h3>
+                            <p style="font-size: 0.9rem;">A secure foundation for handling sensitive user data and connected care infrastructure.</p>
+                        </div>
+                        <div class="pillar-mini" style="margin-bottom: 20px;">
+                            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">HIPAA-Ready Design</h3>
+                            <p style="font-size: 0.9rem;">Aiming toward medical-grade handling of telemetry, secure communication, and future compliance requirements.</p>
+                        </div>
+                        <div class="pillar-mini" style="margin-bottom: 0;">
+                            <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Scalable Transaction Layer</h3>
+                            <p style="font-size: 0.9rem;">A scalable transaction layer for the parts of the ecosystem that may require digital participation and asset movement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container" style="padding-top: 0 !important; padding-bottom: 72px !important;">
+            <div class="glass-card" style="background: linear-gradient(135deg, rgba(0, 210, 255, 0.1), rgba(15, 25, 45, 0.9)); text-align: center; border: 1px solid var(--accent-cyan); margin-bottom: 0;">
+                <h2 style="margin-bottom: 20px;">Discuss the Ecosystem</h2>
+                <p style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem; color: #fff;">
+                    Explore partnership, clinical, and strategic opportunities across the New Freedom Life ecosystem.
+                </p>
+                <a href="contact.php" class="btn" style="background: var(--accent-cyan); color: #0f172a; font-weight: 800; margin-bottom: 0;">Request a Conversation</a>
+            </div>
+        </div>
+
+        <footer>
+            <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="0196eaa158fcda89dd3a64f7-|49"></script><img src="logo.png" alt="Logo" width="44" height="35" class="footer-logo" onerror="this.style.display='none';">
+            <p class="footer-tagline">Innovate. Heal. Thrive.</p>
+            <p class="footer-copy">&copy; 2026 New Freedom Life Inc. All Rights Reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="app.js" type="0196eaa158fcda89dd3a64f7-text/javascript"></script>
+    <script type="0196eaa158fcda89dd3a64f7-text/javascript">
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const journeyTabs = document.querySelectorAll('[data-journey-target]');
+            const journeyPanes = document.querySelectorAll('[data-journey-pane]');
+            const overviewNodes = Array.from(document.querySelectorAll('[data-overview-key]'));
+            const overviewStage = document.querySelector('.overview-stage');
+            const overviewDetailKicker = document.getElementById('overviewDetailKicker');
+            const overviewDetailTitle = document.getElementById('overviewDetailTitle');
+            const overviewDetailText = document.getElementById('overviewDetailText');
+            const overviewContent = {
+                person: {
+                    kicker: 'People in Care',
+                    title: 'Continuity extends beyond formal visits.',
+                    text: 'NF-167 helps maintain structured connection to check-ins, guidance, and faster pathways back to support when risk begins to rise.'
+                },
+                team: {
+                    kicker: 'Care Teams',
+                    title: 'Clinical teams gain more than a single snapshot.',
+                    text: 'Care teams gain a clearer view of change over time, making outreach, follow-through, and response more informed.'
+                },
+                training: {
+                    kicker: 'Training',
+                    title: 'Shared standards make the model repeatable.',
+                    text: 'Training helps teams, sites, and partners work from the same language, safety model, and operating expectations.'
+                },
+                treatment: {
+                    kicker: 'Treatment',
+                    title: 'The treatment layer links care to continuity.',
+                    text: 'Treatment is designed to connect the clinical experience to the operating layer around it, rather than stand alone as an isolated event.'
+                },
+                research: {
+                    kicker: 'Research',
+                    title: 'Long-term insight can inform future therapeutics.',
+                    text: 'The broader ecosystem is intended to support learning over time so future ibogaine-related research rests on a stronger foundation.'
+                }
+            };
+            let overviewCycle = null;
+            let overviewIndex = 0;
+
+            function setOverviewNode(key) {
+                if (!overviewContent[key]) {
+                    return;
+                }
+
+                overviewNodes.forEach(function(node, index) {
+                    const isActive = node.getAttribute('data-overview-key') === key;
+                    node.classList.toggle('active', isActive);
+                    node.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                    if (isActive) {
+                        overviewIndex = index;
+                    }
+                });
+
+                overviewDetailKicker.textContent = overviewContent[key].kicker;
+                overviewDetailTitle.textContent = overviewContent[key].title;
+                overviewDetailText.textContent = overviewContent[key].text;
+            }
+
+            function stopOverviewCycle() {
+                if (overviewCycle) {
+                    window.clearInterval(overviewCycle);
+                    overviewCycle = null;
+                }
+            }
+
+            function startOverviewCycle() {
+                if (!overviewNodes.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                    return;
+                }
+
+                stopOverviewCycle();
+                overviewCycle = window.setInterval(function() {
+                    overviewIndex = (overviewIndex + 1) % overviewNodes.length;
+                    setOverviewNode(overviewNodes[overviewIndex].getAttribute('data-overview-key'));
+                }, 3200);
+            }
+
+            journeyTabs.forEach(function(tab) {
+                tab.addEventListener('click', function() {
+                    const target = tab.getAttribute('data-journey-target');
+
+                    journeyTabs.forEach(function(item) {
+                        item.classList.remove('active');
+                        item.setAttribute('aria-selected', 'false');
+                    });
+                    journeyPanes.forEach(function(pane) {
+                        pane.classList.remove('active');
+                        pane.hidden = true;
+                    });
+
+                    tab.classList.add('active');
+                    tab.setAttribute('aria-selected', 'true');
+
+                    const activePane = document.querySelector('[data-journey-pane="' + target + '"]');
+                    if (activePane) {
+                        activePane.classList.add('active');
+                        activePane.hidden = false;
+                    }
+                });
+            });
+
+            overviewNodes.forEach(function(node) {
+                const key = node.getAttribute('data-overview-key');
+
+                node.addEventListener('mouseenter', function() {
+                    setOverviewNode(key);
+                });
+
+                node.addEventListener('focus', function() {
+                    setOverviewNode(key);
+                });
+
+                node.addEventListener('click', function() {
+                    setOverviewNode(key);
+                });
+            });
+
+            if (overviewStage) {
+                overviewStage.addEventListener('mouseenter', stopOverviewCycle);
+                overviewStage.addEventListener('mouseleave', startOverviewCycle);
+            }
+
+            startOverviewCycle();
+        });
+    </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="0196eaa158fcda89dd3a64f7-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f6cc2466d54ce5f',t:'MTc3Nzk1Mjc5NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"f70c63e79eda449cb2a25b6dd4804f54","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

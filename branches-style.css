@@ -1,0 +1,495 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+  padding:40px;
+
+  font-family:"Poppins",sans-serif;
+
+  background:
+    radial-gradient(circle at top left,#ffffff,#f4f7ff 35%),
+    radial-gradient(circle at bottom right,#eef3ff,#ffffff 45%);
+}
+
+/* MAIN GLASS BOX */
+
+.main-container{
+  width:1200px;
+  min-height:950px;
+  padding:50px;
+  margin: 0 auto 40px;   /* add bottom margin */
+  border-radius:40px;
+  background:rgba(255,255,255,0.35);
+  backdrop-filter:blur(25px);
+  -webkit-backdrop-filter:blur(25px);
+  border:1px solid rgba(255,255,255,0.7);
+  box-shadow:
+    0 20px 60px rgba(15,23,42,0.08),
+    inset 0 0 30px rgba(255,255,255,0.7);
+  position:relative;
+  overflow:hidden;
+}
+
+/* TOP TITLE */
+
+.top-content{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.tag{
+  font-size:13px;
+  letter-spacing:5px;
+  color:#7c8799;
+  margin-bottom:12px;
+  font-weight:500;
+}
+
+.top-content h1{
+  font-size:48px;
+  font-weight:700;
+  background:linear-gradient(to right,#111827,#4b5563);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  letter-spacing:1px;
+}
+
+/* INFOGRAPHIC WRAPPER */
+
+.wrapper{
+  position:relative;
+  width:900px;
+  height:800px;
+  margin:auto;
+}
+
+/* CENTER */
+
+.center-circle{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+
+  width:260px;
+  height:260px;
+  border-radius:50%;
+
+  background:rgba(255,255,255,0.28);
+
+  backdrop-filter:blur(30px);
+
+  border:1px solid rgba(255,255,255,0.8);
+
+  box-shadow:
+  0 8px 32px rgba(31,38,135,0.12),
+  inset 0 0 20px rgba(255,255,255,0.6);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.inner-circle{
+  width:210px;
+  height:210px;
+  border-radius:50%;
+
+  background:linear-gradient(
+  145deg,
+  rgba(255,255,255,0.8),
+  rgba(255,255,255,0.35));
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  box-shadow:
+  inset 6px 6px 12px rgba(255,255,255,0.8),
+  inset -6px -6px 12px rgba(0,0,0,0.05);
+}
+
+.inner-circle span{
+  font-size:14px;
+  letter-spacing:4px;
+  color:#7b8191;
+}
+
+.inner-circle h2{
+  font-size:38px;
+  color:#111827;
+  font-weight:700;
+}
+
+/* CARDS */
+
+.card{
+  position:absolute;
+  width:260px;
+  height:220px;
+}
+
+.glass{
+  width:100%;
+  height:100%;
+
+  padding:30px;
+  border-radius:35px;
+
+  background:rgba(255,255,255,0.38);
+
+  backdrop-filter:blur(22px);
+
+  border:1px solid rgba(255,255,255,0.8);
+
+  box-shadow:
+  0 10px 35px rgba(0,0,0,0.08),
+  inset 0 0 10px rgba(255,255,255,0.9);
+
+  transition:0.4s ease;
+}
+
+.glass:hover{
+  transform:translateY(-10px) scale(1.03);
+
+  box-shadow:
+  0 20px 45px rgba(0,0,0,0.12),
+  inset 0 0 15px rgba(255,255,255,0.9);
+}
+
+.glass h3{
+  font-size:24px;
+  margin-bottom:12px;
+  font-weight:600;
+}
+
+.glass p{
+  font-size:14px;
+  line-height:1.8;
+  color:#5d6472;
+}
+
+/* CARD COLORS */
+
+.card1 .glass{
+  border-top:5px solid #ff8c42;
+}
+
+.card2 .glass{
+  border-top:5px solid #ff8c42;
+}
+
+.card3 .glass{
+  border-top:5px solid #ff8c42;
+}
+
+.card4 .glass{
+  border-top:5px solid #ff8c42;
+}
+
+.card5 .glass{
+  border-top:5px solid #ff8c42;
+}
+
+/* POSITIONS */
+
+.card1{
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.card2{
+  top:190px;
+  right:0;
+}
+
+.card3{
+  bottom:20px;
+  right:120px;
+}
+
+.card4{
+  bottom:20px;
+  left:120px;
+}
+
+.card5{
+  top:190px;
+  left:0;
+}
+
+/* CONNECTORS */
+
+.card::before{
+  content:"";
+  position:absolute;
+  width:30px;
+  height:30px;
+
+  background:rgba(255,255,255,0.75);
+
+  backdrop-filter:blur(15px);
+
+  border-radius:10px;
+
+  z-index:-1;
+}
+
+/* CONNECTOR POSITION */
+
+.card1::before{
+  bottom:-15px;
+  left:50%;
+  transform:translateX(-50%) rotate(45deg);
+}
+
+.card2::before{
+  left:-15px;
+  top:50%;
+  transform:translateY(-50%) rotate(45deg);
+}
+
+.card3::before{
+  top:-15px;
+  left:50%;
+  transform:translateX(-50%) rotate(45deg);
+}
+
+.card4::before{
+  top:-15px;
+  left:50%;
+  transform:translateX(-50%) rotate(45deg);
+}
+
+.card5::before{
+  right:-15px;
+  top:50%;
+  transform:translateY(-50%) rotate(45deg);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+  .main-container{
+    width:100%;
+    padding:30px 20px;
+  }
+
+  .wrapper{
+    width:100%;
+    height:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    align-items:center;
+  }
+
+  .center-circle{
+    position:relative;
+    top:auto;
+    left:auto;
+    transform:none;
+    margin:20px 0;
+  }
+
+  .card{
+    position:relative;
+    width:100%;
+    max-width:400px;
+
+    top:auto;
+    right:auto;
+    bottom:auto;
+    left:auto;
+
+    transform:none;
+  }
+
+  .card::before{
+    display:none;
+  }
+
+  .top-content h1{
+    font-size:38px;
+  }
+}
+.overview-section{
+  max-width: 1200px;
+  margin: 20px auto 30px;
+  padding: 0 20px;
+}
+
+.overview-grid{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0,1fr));
+  gap: 16px;
+}
+
+.overview-item{
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.9);
+  box-shadow: 0 10px 26px rgba(15,23,42,0.10);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+/* thin orange line on top of each item */
+.overview-item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--nf-orange), var(--nf-orange-soft));
+}
+
+.overview-item h3{
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 0 6px;
+  color: #111827;
+}
+
+.overview-item p{
+  font-size: 13px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* responsive behaviour */
+@media (max-width: 1100px){
+  .overview-grid{
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+}
+
+@media (max-width: 768px){
+  .overview-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.branch-arrow{
+  text-align: center;
+}
+
+.glass-overview{
+  padding: 26px 28px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.7);
+  box-shadow: 0 14px 38px rgba(15,23,42,0.14);
+}
+
+.overview-section h2{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.overview-section p{
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4b5563;
+}
+:root{
+  --nf-orange: #ff8c42;
+  --nf-orange-soft: #ffb36b;
+}
+
+/* Ibogaine section */
+.ibogaine-section{
+  max-width: 1200px;
+  margin: 30px auto 80px;
+  padding: 0 20px;
+}
+
+.ibogaine-card{
+  margin-top: 4px;
+}
+
+.glass-ibogaine{
+  padding: 32px 30px 30px;
+  border-radius: 32px;
+  background: rgba(255,255,255,0.40);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.8);
+  box-shadow: 0 18px 48px rgba(15,23,42,0.18);
+}
+
+.ibogaine-section h2{
+  font-size: 30px;
+  margin: 6px 0 16px;
+}
+
+.ibogaine-section > .glass-ibogaine > p{
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.ibogaine-points{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 20px;
+}
+
+.ibogaine-points .point{
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.66);
+  border: 1px solid rgba(255,255,255,0.85);
+  box-shadow: 0 10px 30px rgba(15,23,42,0.10);
+
+  border-top: 4px solid var(--nf-orange);   /* add this line */
+}
+/* Bigger label line: In Development / In Treatment / In Operations */
+.ibogaine-points .point h3:first-of-type{
+  font-size: 17px;     /* bigger */
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Smaller subtitle line: Future Therapeutic Development, etc. */
+.ibogaine-points .point h3:last-of-type{
+  font-size: 14px;     /* smaller */
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.ibogaine-points .point p{
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* make it responsive */
+@media (max-width: 900px){
+  .ibogaine-points{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px){
+  .overview-section h2,
+  .ibogaine-section h2{
+    font-size: 22px;
+  }
+}
