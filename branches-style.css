@@ -1,13 +1,18 @@
-:root {
-  --nf-blue: #0891b2;          /* logo blue – replace with exact hex */
-  --nf-blue-soft: #38bdf8;     /* lighter blue for gradients */
-  --nf-sunrise: #ffb703;       /* soft sunrise accent, not harsh orange */
-  --nf-sunrise-soft: #fb8500;  /* slightly deeper accent */
-  --nf-bg: #f4f5f7;
-  --nf-text-dark: #111111;
-  --nf-text-muted: #444444;
-}
+:root{
+  --nf-blue:#0891b2;
+  --nf-blue-soft:#38bdf8;
 
+  --nf-sunrise:#f4a261;
+  --nf-sunrise-soft:#e76f51;
+
+  --nf-bg:#f6f7f9;
+
+  --nf-text-dark:#111827;
+  --nf-text-muted:#4b5563;
+
+  --glass-white:rgba(255,255,255,0.45);
+  --glass-border:rgba(255,255,255,0.75);
+}
 *{
   margin:0;
   padding:0;
@@ -303,23 +308,23 @@ nav {
 /* CARD COLORS */
 
 .card1 .glass{
-  border-top:5px solid #ff8c42;
+  border-top:5px var(--nf-blue);
 }
 
 .card2 .glass{
-  border-top:5px solid #ff8c42;
+  border-top:5px var(--nf-blue);
 }
 
 .card3 .glass{
-  border-top:5px solid #ff8c42;
+  border-top:5px var(--nf-blue);
 }
 
 .card4 .glass{
-  border-top:5px solid #ff8c42;
+  border-top:5px var(--nf-blue);
 }
 
 .card5 .glass{
-  border-top:5px solid #ff8c42;
+  border-top:5px var(--nf-blue);
 }
 
 /* POSITIONS */
@@ -499,7 +504,7 @@ nav {
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, var(--nf-orange), var(--nf-orange-soft));
+  background: linear-gradient(90deg, var(--nf-blue), var(--nf-blue));
 }
 
 .overview-item h3{
@@ -606,7 +611,7 @@ nav {
   margin: 6px 0 16px;
 }
 
-.ibogaine-section > .glass-ibogaine > p{
+.ibogaine-sectio,.glass-ibogaine,p{
   font-size: 15px;
   line-height: 1.8;
   color: #4b5563;
@@ -626,7 +631,7 @@ nav {
   border: 1px solid rgba(255,255,255,0.85);
   box-shadow: 0 10px 30px rgba(15,23,42,0.10);
 
-  border-top: 4px solid var(--nf-orange);
+  border-top: 4px solid var(--nf-blue);
 }
 
 .ibogaine-points .point h3:first-of-type{
@@ -647,7 +652,7 @@ nav {
 }
 
 .ibogaine-points .point a{
-  color: #ff8c42;
+  color: var(--nf-sunrise-soft);
   text-decoration: none;
 }
 
