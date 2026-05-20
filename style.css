@@ -1,8 +1,8 @@
 :root {
-  --nf-blue: #0891b2;          /* logo blue – replace with exact hex */
-  --nf-blue-soft: #38bdf8;     /* lighter blue for gradients */
-  --nf-sunrise: #ffb703;       /* soft sunrise accent, not harsh orange */
-  --nf-sunrise-soft: #fb8500;  /* slightly deeper accent */
+  --nf-blue: #0891b2;       
+  --nf-blue-soft: #38bdf8;  
+  --nf-sunrise: #ffb703;  
+  --nf-sunrise-soft: #fb8500;
   --nf-bg: #f4f5f7;
   --nf-text-dark: #111111;
   --nf-text-muted: #444444;
