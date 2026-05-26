@@ -349,7 +349,7 @@ nav {
   justify-content:center;
   align-items:stretch;
   gap:18px;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
 
   margin-top:20px;
 }
@@ -532,5 +532,105 @@ nav {
   font-size: 16px;
   color: var(--nf-text-dark);     
 }
+
+/*ecosystem role section*/
+.eco-wrapper{
+  width:min(95%,1300px);
+
+  margin:120px auto 100px;
+
+  background:rgba(255,255,255,0.35);
+
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,0.7);
+
+  border-radius:40px;
+
+  box-shadow:
+  0 18px 40px rgba(15,23,42,0.12);
+
+  padding:35px;
+}
+
+.eco-wrapper h3{
+  color: var(--nf-sunrise-soft);
+  margin-bottom: 8px;
+}
+
+.glass-card-eco{
+  margin-top: 20px;
+  width: 560px;
+
+  padding:35px;
+
+  margin: 30px auto 0;
+
+  border-radius:30px;
+
+  background:rgba(255,255,255,0.35);
+
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,0.7);
+
+  box-shadow:
+  0 18px 40px rgba(15,23,42,0.12);
+}
+
+.glass-card2{
+  width:240px;
+  min-height:210px;
+  padding:35px;
+
+  border-radius:30px;
+
+  background:rgba(255,255,255,0.35);
+
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,0.7);
+
+  box-shadow:0 18px 40px rgba(15,23,42,0.12);
+
+  flex:1 1 240px;
+}
+
+.glass-card-eco h5{
+  text-align: center;
+  justify-content: center;
+  color: var(--nf-blue-soft);
+  margin-bottom: 10px;
+}
+
+.glass-card-eco{
+  width:1000px;
+  min-height:260px;
+}
+
+.small-card h4{
+    font-size: 18px;
+    color: var(--nf-blue);
+}
+
+.small-card p{
+    line-height: 1.7;
+}
+
+.small-card{
+  width:240px;
+  min-height:210px;
+  max-width: 100%;
+}
+
+.small-card h2{
+  font-size:28px;
+  margin-top:5px;
+  margin-bottom:15px;
+}
+
 
 
