@@ -56,17 +56,102 @@ nav {
   color: var(--nf-blue);
 }
 
+/* HAMBURGER BUTTON */
+
+.menu-toggle {
+  display: none;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+
+  width: 46px;
+  height: 46px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.22);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.menu-toggle:hover {
+  transform: translateY(-2px);
+}
+
+.menu-toggle span {
+  width: 22px;
+  height: 2px;
+
+  background: var(--nf-text-dark);
+
+  border-radius: 999px;
+
+  transition: 0.3s ease;
+}
+
+/* MOBILE NAV */
+
 @media (max-width: 768px) {
+
   nav {
-    flex-direction: column;
-    gap: 20px;
+    padding: 18px 20px;
+
+    flex-wrap: wrap;
+
+    gap: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
   }
 
   .nav-links {
+    width: 100%;
+
+    display: none;
+
     flex-direction: column;
+
     align-items: center;
+
+    gap: 18px;
+
+    margin-top: 20px;
+
+    padding: 24px 0;
+
+    border-radius: 24px;
+
+    background: rgba(255,255,255,0.32);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    box-shadow: 0 12px 30px rgba(15,23,42,0.12);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 14px;
   }
 }
+
 .main h3{
     text-align: center;
     justify-content: center;
@@ -131,6 +216,16 @@ nav {
   0 18px 40px rgba(15,23,42,0.12);
 }
 
+/* EXPAND CARDS ONLY IN WHAT IT COVERS SECTION */
+
+.what-wrapper:last-of-type .what-does-container .glass-card{
+  width:100% !important;
+
+  flex:1;
+
+  min-width:0;
+}
+
 .glass-card h4{
     color: var(--nf-sunrise-soft);
 }
@@ -154,7 +249,7 @@ nav {
     color: var(--nf-blue);
 }
 
-/*what it odes section*/
+/*what it does section*/
 .what-wrapper{
   width:100%;
   max-width:1240px;
@@ -208,7 +303,7 @@ nav {
 
 .what-does-container .small-card{
   width:100%;
-  min-height:240px;
+  min-height:210px;
 }
 
 .what-does-container h4{
@@ -223,7 +318,6 @@ nav {
   color:var(--nf-text-muted);
 }
 
-/* HIGHLIGHT ENVIRONMENT CARD IN WHAT SECTION */
 
 .what-does-container .small-card:first-child{
   position: relative;
@@ -378,21 +472,38 @@ nav {
   }
 }
 
-/*what it covers*/
-/* MINI INNER GLASS CARD */
-/* SECOND WHAT SECTION - 2 COLUMN LAYOUT */
+/* WHAT IT COVERS SECTION */
 
 .what-wrapper:last-of-type .what-does-container{
-  grid-template-columns:repeat(2,minmax(0,1fr));
+  display:flex;
+
+  gap:28px;
+
+  width:100%;
+
+  margin-top:20px;
 }
 
-/* ALLOW GRID CARDS TO EXPAND */
+.what-wrapper:last-of-type .what-does-container .glass-card{
+  flex:1;
+
+  width:100%;
+
+  min-height:520px;
+}
 
 .what-wrapper:last-of-type .glass-card{
   width:100%;
+  min-height:520px;
 }
 
-/* SPACING BETWEEN h6 AND h4 */
+@media (max-width:768px){
+
+  .what-wrapper:last-of-type .what-does-container{
+    grid-template-columns:1fr;
+  }
+
+}
 
 .glass-card h6{
   margin-bottom: 10px;
@@ -535,9 +646,7 @@ nav {
   color: var(--nf-text-dark);     
 }
 
-/* =========================
-   ECOSYSTEM CARDS LAYOUT
-========================= */
+/* ECOSYSTEM CARDS LAYOUT*/
 
 .eco-cards-container{
   display:grid;
@@ -548,8 +657,6 @@ nav {
 
   margin-top:30px;
 }
-
-/* CARD DESIGN */
 
 .glass-card2{
   padding:32px;
@@ -569,7 +676,10 @@ nav {
   min-height:240px;
 }
 
-/* TEXT */
+.what-wrapper:last-of-type .glass-card{
+  width:100%;
+}
+
 
 .glass-card2 h4{
   color:var(--nf-blue);
@@ -665,9 +775,8 @@ nav {
 }
 
 .small-card{
-  width:240px;
+  width:100%;
   min-height:210px;
-  max-width: 100%;
 }
 
 .small-card h2{
@@ -676,17 +785,13 @@ nav {
   margin-bottom:15px;
 }
 
-/* =========================
-   GLOBAL RESPONSIVE FIXES
-========================= */
-
 img,
 video {
   max-width: 100%;
   height: auto;
 }
 
-/* Prevent large cards from overflowing */
+
 
 .glass-card,
 .glass-card1,
@@ -694,10 +799,6 @@ video {
 .glass-card-eco {
   max-width: 100%;
 }
-
-/* =========================
-   ECO SECTION FIX
-========================= */
 
 .eco-wrapper {
   width: min(95%, 1300px);
@@ -711,10 +812,6 @@ video {
   margin: 30px auto 0;
 }
 
-/* =========================
-   INFO CARDS FIX
-========================= */
-
 .info-cards {
   display: flex;
   gap: 24px;
@@ -726,10 +823,6 @@ video {
   width: 100%;
   min-height: auto;
 }
-
-/* =========================
-   ECO GRID FIX
-========================= */
 
 .eco-cards-container {
   display: grid;
@@ -743,17 +836,10 @@ video {
   min-height: 230px;
 }
 
-/* =========================
-   MAIN HERO FIX
-========================= */
-
 .main {
   padding: 0 24px;
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
 
 @media (max-width: 992px) {
 
@@ -817,4 +903,115 @@ video {
     margin: 70px 16px;
     width: auto;
   }
+}
+
+.glass-card-info{
+  margin-top: 20px;
+  width: 770px;
+
+  height: 250px;
+
+  padding:35px;
+
+  margin: 30px auto 0;
+
+  border-radius:30px;
+
+  background:rgba(255,255,255,0.35);
+
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+
+  border:1px solid var(--nf-sunrise-soft);
+
+  box-shadow:
+  0 18px 40px rgba(15,23,42,0.12);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glass-card-info h2{
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.glass-card-info p{
+    text-align: center;
+    justify-content: center;
+}
+
+.btn {
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 24px;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    var(--nf-sunrise),
+    var(--nf-sunrise-soft)
+  );
+
+  opacity: 0.86;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 8px 20px rgba(251, 133, 0, 0.25);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 25px rgba(251, 133, 0, 0.45);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 80px;
+
+  padding: 50px 20px 30px;
+
+  background: #f4f5f7;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer h3 {
+  font-size: 18px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #111827;
+
+  margin-bottom: 14px;
+}
+
+.footer-copy {
+  font-size: 13px;
+
+  color: #6b7280;
 }

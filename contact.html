@@ -9,16 +9,28 @@
 <body>
     <nav>
       <div class="logotext">NEW FREEDOM LIFE ECOSYSTEM</div>
-
+        <button class="menu-toggle" aria-label="Toggle navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
       <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
         <li><a href="branches.html">ECOSYSTEM BRANCHES</a></li>
         <li><a href="#">NF-167</a></li>
         <li><a href="./NFLC.html">NFLC</a></li>
-        <li><a href="#">LEADERSHIP</a></li>
+        <li><a href="leadership.html">LEADERSHIP</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        });
+    </script>
 
     <div class="side-info">
         <h3>Corporate Inquiries</h3>

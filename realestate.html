@@ -9,16 +9,28 @@
 <body>
     <nav>
       <div class="logotext">NEW FREEDOM LIFE ECOSYSTEM</div>
-
+        <button class="menu-toggle" aria-label="Toggle navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
       <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
         <li><a href="branches.html">ECOSYSTEM BRANCHES</a></li>
         <li><a href="#">NF-167</a></li>
         <li><a href="./NFLC.html">NFLC</a></li>
-        <li><a href="#">LEADERSHIP</a></li>
+        <li><a href="leadership.html">LEADERSHIP</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        });
+    </script>
     <div class="main">
         <h3>PROPERTY AND OWNERSHIP INFRASTRUCTURE</h3>
         <h1>PHYSICAL ENVIRONMENTS ARE PART OF THE CARE MODEL</h1>
@@ -209,31 +221,21 @@
                 </div>
 
             </div>
-
-            <!-- INFO CARDS MOVED OUTSIDE GRID -->
-
             <div class="info-cards">
 
                 <div class="glass-card1">
-                    <h3>THE CARE REALITY</h3>
+                    <h3>TREATMENT AND TRAINING</h3>
 
                     <p>
-                        When treatment involves residential care,
-                        high-touch supervision, or a premium
-                        recovery experience, the physical environment
-                        becomes part of the operating model rather
-                        than a background detail.
+                        Strong physical environments help treatment teams deliver care more consistently and give training systems a real site in which standards and procedures can actually be applied.
                     </p>
                 </div>
 
                 <div class="glass-card1">
-                    <h3>THE BRANCH RESPONSE</h3>
+                    <h3>TECHNOLOGY AND LONG-TERM GROWTH</h3>
 
                     <p>
-                        The real estate branch is designed to align
-                        property strategy with recovery operations so
-                        the environment supports, rather than
-                        undermines, the rest of the system.
+                        As the ecosystem expands, the real estate branch gives the model stable places to operate, while technology keeps those places connected to the rest of the system
                     </p>
                 </div>
 
@@ -243,6 +245,68 @@
 
     </div>
 </div>
+<div class="what-wrapper">
+    <div class="what-section">
+        <h5>HOW IT FITS</h5>
+        <p class="what-subtitle">
+           THIS AREA IS ABOUT MORE THAN PROPERTY ALONE
+        </p>
+        <div class="flow1-wrapper">
+        <div class="what-does-container">
+            <div class="glass-card">
+                    <h6>CARE SIDE</h6>
+                    <h4>Sites built for care</h4>
+                    <div class="mini-glass">
+                        <p>Residential setting</p>
+                    </div>
+                    <div class="mini-glass">
+                        <p>Observation and staff fow</p>
+                    </div>
+                    <div class="mini-glass">
+                        <p>Operational readiness</p>
+                    </div>
+            </div>
+                <div class="glass-card">
+                    <h6>OWNERSHIP SIDE</h6>
+                    <h4>Participation Layer</h4>
+                    <div class="mini-glass">
+                        <p>Shared ownership</p>
+                    </div>
+                    <div class="mini-glass">
+                        <p>Fractional participation</p>
+                    </div>
+                    <div class="mini-glass">
+                        <p>Long-term infrastructure</p>
+                    </div>
+                </div>
+            </div>
+                  <div class="info-cards">
+      <div class="glass-card1">
+        <h3>THE CARE SIDE</h3>
+        <p>The real estate branch helps define where and how a premium recovery model can physically operate.</p>
+      </div>
+      <div class="glass-card1">
+            <h3>OWNERSHIP INFRASTRUCTURE</h3>
+            <p>It also includes the long-term ownership and participation structure behind those environments, which is why this area covers both premium properties and shared ownership models.</p>
+      </div>
+       </div>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="glass-card-info">
+    <h2>DISCUSS PROPERTY STARTEGY INSIDE THE ECOSYSTEM</h2>
+    <p>The real estate branch is where physical environments, operating readiness, and long-term ownership infrastructure come together.</p>
+    <a href="contact.html" class="btn">REQUEST A CONVERSATION</a>
+</div>
+<footer class="footer">
+        <div class="footer-content">
+           <h3>INNOVATE.HEAL.THRIVE</h3>
+        <p class="footer-copy">
+          © 2026 New Freedom Life Inc. All rights reserved.
+        </p>
+      </div>
+</footer>
 
 
 

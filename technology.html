@@ -9,16 +9,28 @@
 <body>
     <nav>
       <div class="logotext">NEW FREEDOM LIFE ECOSYSTEM</div>
-
+        <button class="menu-toggle" aria-label="Toggle navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
       <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
         <li><a href="branches.html">ECOSYSTEM BRANCHES</a></li>
         <li><a href="#">NF-167</a></li>
         <li><a href="./NFLC.html">NFLC</a></li>
-        <li><a href="#">LEADERSHIP</a></li>
+        <li><a href="leadership.html">LEADERSHIP</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        });
+    </script>
     <div class="main">
         <h3>TECHNOLOGY</h3>
         <h1>THE OPERATING LAYER BETWEEN FORMAL POINTS OF CARE</h1>
@@ -187,10 +199,79 @@
                 <h2>Visibility</h2>
                 <p>Structured longitudinal signals strengthen future learning and development</p>
             </div>
-            </div>
+        </div>
+        <div class="main-down">
+        <div class="glass-card">
+            <h3>TREATMENT AND TRAINING</h3>
+        <p>Technology gives treatment teams better continuity and gives training systems a real environment in which standards, workflows, and escalation logic can be applied consistently.</p>
+        </div>
+        <div class="glass-card">
+            <h3>REAL ESTATE AND LONG-TERM GROWTH</h3>
+            <p>As the ecosystem grows into physical sites and future therapeutic development, the technology branch provides the connective tissue that helps the entire platform operate as one system rather than as separate pieces.</p>
+        </div>
+    </div>
     </div>
 
 </div>
+<!--HOW IT FITS-->
+<div class="what-wrapper">
+    <div class="what-section">
+        <h5>HOW IT FITS</h5>
+        <p class="what-subtitle">
+           HOW NF-167 FITS THE TECHNOLOGY LAYER
+        </p>
+        <div class="flow1-wrapper">
+        <div class="what-does-container">
+            <div class="glass-card">
+                    <h6>TECHNOLOGY BRANCH</h6>
+                    <h4>Operating Responsibilities</h4>
+                    <div class="mini-glass">
+                        <p>Continuity between sessions</p>
+                    </div>
+                    <div class="mini-glass">
+                        <p>Visibility for care teams</p>
+                    </div>
+                    <div class="mini-glass">
+                        <p>Connection across the platform</p>
+                    </div>
+            </div>
+                <div class="glass-card">
+                    <h6>NF-167 PRODUCT</h6>
+                    <h4>Interface The Model Can Actually Use</h4>
+                    <div class="mini-glass">
+                        <p>Daily check-ins and guided routines</p>
+                    </div>
+                    <div class="mini-glass">
+                        <p>Mood capture and structured notes</p>
+                    </div>
+                    <div class="mini-glass">
+                        <p>Atlas lessons, pod connection, and insights</p>
+                    </div>
+                </div>
+            </div>
+                  <div class="info-cards">
+      <div class="glass-card1">
+        <h3>THE BRANCH LEVEL</h3>
+        <p>The technology branch refers to the role digital infrastructure plays inside the ecosystem: continuity, visibility, and connection between people and care teams.</p>
+      </div>
+      <div class="glass-card1">
+            <h3>THE PRODUCT LEVEL</h3>
+            <p>NF-167 is the operating layer that carries that branch forward in practice. It is where the branch becomes something users and care teams can actually interact with.</p>
+            <a href="#" class="explore">EXPLORE NF-167</a>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+       <footer class="footer">
+        <div class="footer-content">
+           <h3>INNOVATE.HEAL.THRIVE</h3>
+        <p class="footer-copy">
+          © 2026 New Freedom Life Inc. All rights reserved.
+        </p>
+      </div>
+</footer>
 
 </body>
 </html>
