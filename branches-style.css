@@ -781,3 +781,13 @@ nav {
   font-size:13px;
   color:#6b7280;
 }
+
+.footer-logo{
+  width: 50px;
+  
+  height: auto;
+
+  margin-bottom: 20px;
+
+  object-fit: contain;
+}
