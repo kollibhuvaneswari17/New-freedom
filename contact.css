@@ -25,6 +25,7 @@ body {
   overflow-x: hidden;
 }
 
+
 nav {
   position: sticky;
   top: 0;
@@ -56,8 +57,6 @@ nav {
 .nav-links a:hover {
   color: var(--nf-blue);
 }
-
-/* HAMBURGER BUTTON */
 
 .menu-toggle {
   display: none;
@@ -151,4 +150,228 @@ nav {
   .nav-links a {
     font-size: 14px;
   }
+}
+
+.glass-card2{
+    width: min(1200px, 92%);
+    margin: 100px auto;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    background: rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.55);
+    border-radius:30px;
+
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+
+    box-shadow:0 18px 48px rgba(15,23,42,.18);
+}
+
+.side-info{
+    flex:1;
+    margin-top: -150px;
+}
+
+.side-info h3{
+    color:var(--nf-sunrise);
+    font-size:14px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.side-info h1{
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:25px;
+    color:var(--nf-text-dark);
+    max-width: 525px;
+}
+
+.side-info p{
+    font-size:17px;
+    line-height:1.8;
+    color:var(--nf-text-muted);
+    max-width:500px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 22px;
+    margin:0 auto 30px;
+    border-radius:999px;
+    background:rgba(8,145,178,.12);
+    color:var(--nf-blue);
+    border:1px solid rgba(8,145,178,.25);
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.info-box{
+    margin-top:45px;
+    padding:28px;
+    border-left:5px solid var(--nf-blue);
+    border-radius:18px;
+    background:rgba(255,255,255,.30);
+}
+
+.info-box h4{
+    margin-bottom:14px;
+    font-size:18px;
+}
+
+.info-box a{
+    text-decoration:none;
+    color:var(--nf-blue);
+    font-weight:600;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.info-box a:hover{
+    color:var(--nf-sunrise);
+}
+
+.quote-card{
+    text-align:center;
+}
+
+.quote-card form{
+    text-align:left;
+}
+
+
+.quote-card{
+    flex:1;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.30);
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,.45);
+
+    backdrop-filter:blur(16px);
+
+    max-width: 520px;
+    width: 100%;
+}
+
+.quote-card h6{
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--nf-blue);
+    margin-bottom:25px;
+}
+
+.quote-card h2{
+    text-align:center;
+    margin:25px 0 35px;
+    font-size:30px;
+    font-weight:700;
+    color:var(--nf-text-dark);
+}
+
+.quote-card form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.quote-card input,
+.quote-card textarea{
+    width:100%;
+    padding:16px 18px;
+
+    border:none;
+    border-radius:14px;
+    background:white;
+    border:1px solid rgba(8,145,178,.15);
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+.quote-card input:focus,
+.quote-card textarea:focus{
+
+    border-color:var(--nf-blue);
+
+    box-shadow:0 0 0 4px rgba(8,145,178,.12);
+
+}
+
+.quote-card input,
+.quote-card textarea{
+    font-family:inherit;
+}
+
+.quote-card input::placeholder,
+.quote-card textarea::placeholder{
+
+    color:#777;
+
+}
+
+.quote-card textarea{
+    resize:vertical;
+    min-height:160px;
+}
+
+.quote-card button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        var(--nf-blue),
+        var(--nf-blue-soft)
+    );
+
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0 10px 25px rgba(8,145,178,.25);
+}
+
+.g-recaptcha{
+  align-items: center;
+}
+
+
+@media (max-width:900px){
+
+    .glass-card2{
+        flex-direction:column;
+        padding:35px 25px;
+        gap:35px;
+    }
+
+    .side-info h1{
+        font-size:32px;
+    }
+
+    .quote-card{
+        width:100%;
+        padding:25px;
+    }
 }

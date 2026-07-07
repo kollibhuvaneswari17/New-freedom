@@ -6,6 +6,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
 </head>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <body>
     <nav>
       <div class="logotext">NEW FREEDOM LIFE ECOSYSTEM</div>
@@ -30,17 +31,65 @@
         navLinks.classList.toggle("active");
         });
     </script>
+    <section class="glass-card2">
 
     <div class="side-info">
-        <h3>Corporate Inquiries</h3>
-        <h2>STRATEGIC PARTNERSHIPS, LICENSING, AND CORPORATE INQUIRIES</h2>
-        <p>For strategic partnerships, enterprise licensing of NF-167, or inquiries related to New Freedom Life real estate and fractional ownership, please submit your request below.</p>
-        <div class="quote-card">
-            <h6>DIRECT CORPORATE INQUIRY</h6>
-            
 
+        <h3>CORPORATE INQUIRIES</h3>
+
+        <h1>
+            STRATEGIC PARTNERSHIPS,
+            LICENSING, AND
+            CORPORATE INQUIRIES
+        </h1>
+
+        <p>
+            For strategic partnerships, enterprise licensing of NF-167,
+            or inquiries related to New Freedom Life real estate and
+            fractional ownership, please submit your request below.
+        </p>
+
+        <div class="info-box">
+            <h4>DIRECT CORPORATE INQUIRY</h4>
+            <a href="mailto:info@newfreedom.life">
+                info@newfreedom.life
+            </a>
         </div>
+
     </div>
+
+    <div class="quote-card">
+
+        <div class="badge">
+             TLS 1.3 ENCRYPTED INTAKE
+        </div>
+
+        <h2>CORPORATE INQUIRY</h2>
+
+        <form>
+
+            <input type="text" required
+                placeholder="Corporate Entity / Full Name">
+
+            <input type="email" required
+                placeholder="Professional Email Address">
+
+            <textarea required
+                placeholder="Nature of Inquiry"></textarea>
+
+            <div class="g-recaptcha"
+                 data-sitekey="SITEKEY">
+            </div>
+
+            <button>
+                SUBMIT INQUIRY
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
     
 </body>
 </html>
