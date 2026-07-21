@@ -31,7 +31,7 @@ nav {
   top: 0;
   z-index: 1000;
   width: 100%;
-  padding: 14px 60px;
+  padding: 8px 60px;
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -39,6 +39,25 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo img{
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+
+.logotext {
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
 }
 
 .nav-links {
@@ -353,10 +372,55 @@ nav {
     box-shadow:0 10px 25px rgba(8,145,178,.25);
 }
 
-.g-recaptcha{
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
+.cf-turnstile{
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+}
+
+.footer {
+  margin-top: 80px;
+
+  padding: 50px 20px 30px;
+
+  background: #f4f5f7;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer h3 {
+  font-size: 18px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #111827;
+
+  margin-bottom: 14px;
+}
+
+.footer-copy {
+  font-size: 13px;
+
+  color: #6b7280;
+}
+
+.footer-logo{
+  width: 50px;
+  
+  height: auto;
+
+  margin-bottom: 20px;
+
+  object-fit: contain;
 }
 
 

@@ -30,7 +30,7 @@ nav {
   top: 0;
   z-index: 1000;
   width: 100%;
-  padding: 14px 60px;
+  padding: 8px 60px;
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -39,6 +39,26 @@ nav {
   align-items: center;
   border-bottom: 1px solid rgba(148, 163, 184, 0.3);
 }
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo img{
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+
+.logotext {
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+
 .nav-links {
   display: flex;
   gap: 30px;
@@ -216,14 +236,18 @@ nav {
   0 18px 40px rgba(15,23,42,0.12);
 }
 
-/* EXPAND CARDS ONLY IN WHAT IT COVERS SECTION */
+/* ================================
+   WHAT IT COVERS - CENTERED CARDS
+================================ */
 
-.what-wrapper:last-of-type .what-does-container .glass-card{
-  width:100% !important;
 
-  flex:1;
-
-  min-width:0;
+/* Individual cards */
+.what-wrapper:last-of-type .what-does-container > .glass-card {
+    flex: 1 1 0;
+    width: auto;
+    max-width: 500px;
+    min-height: 560px;
+    padding: 40px;
 }
 
 .glass-card h4{
@@ -474,29 +498,6 @@ nav {
 
 /* WHAT IT COVERS SECTION */
 
-.what-wrapper:last-of-type .what-does-container{
-  display:flex;
-
-  gap:28px;
-
-  width:100%;
-
-  margin-top:20px;
-}
-
-.what-wrapper:last-of-type .what-does-container .glass-card{
-  flex:1;
-
-  width:100%;
-
-  min-height:520px;
-}
-
-.what-wrapper:last-of-type .glass-card{
-  width:100%;
-  min-height:520px;
-}
-
 @media (max-width:768px){
 
   .what-wrapper:last-of-type .what-does-container{
@@ -531,9 +532,11 @@ nav {
 .mini-glass{
   margin-top:20px;
 
+  min-height: 82px;
+
   width:100%;
 
-  padding:18px 20px;
+  padding:22px 24px;
 
   border-radius:18px;
 
@@ -557,9 +560,6 @@ nav {
 
   align-items:center;
   justify-content:center;
-
-  min-height:72px;
-
   text-align:center;
   border-color: var(--nf-blue-soft);
 }
@@ -674,10 +674,6 @@ nav {
     0 12px 28px rgba(15,23,42,0.10);
 
   min-height:240px;
-}
-
-.what-wrapper:last-of-type .glass-card{
-  width:100%;
 }
 
 
@@ -844,10 +840,6 @@ video {
 @media (max-width: 992px) {
 
   .what-does-container {
-    grid-template-columns: 1fr !important;
-  }
-
-  .what-wrapper:last-of-type .what-does-container {
     grid-template-columns: 1fr !important;
   }
 
@@ -1024,4 +1016,34 @@ video {
   margin-bottom: 20px;
 
   object-fit: contain;
+}
+
+/* =================================
+   WHAT IT COVERS - CENTERED LAYOUT
+================================= */
+
+.what-covers-wrapper .flow1-wrapper {
+    width: 100%;
+}
+
+.what-covers-wrapper .what-does-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
+
+/* The two main cards */
+.what-covers-wrapper .what-does-container > .glass-card {
+    flex: 1 1 0;
+    width: auto;
+    max-width: 500px;
+    min-height: 560px;
+}
+
+/* Make the cards occupy the available space */
+.what-covers-wrapper .what-does-container > .glass-card:first-child,
+.what-covers-wrapper .what-does-container > .glass-card:last-child {
+    margin: 0;
 }

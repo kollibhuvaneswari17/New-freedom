@@ -31,7 +31,7 @@ nav {
   top: 0;
   z-index: 1000;
   width: 100%;
-  padding: 14px 60px;
+  padding: 8px 60px;
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -40,6 +40,26 @@ nav {
   align-items: center;
   border-bottom: 1px solid rgba(148, 163, 184, 0.3);
 }
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo img{
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+
+.logotext {
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+
 .nav-links {
   display: flex;
   gap: 30px;
@@ -219,9 +239,76 @@ nav {
 .glass-card p{
     margin-top: 5px;
 }
+
+/*images of iboga*/
+.why-wrapper1 {
+  width: fit-content;
+  max-width: 80%;
+  margin: 80px auto 60px;
+  padding: 28px;
+
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
+
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  max-width: 100%;
+}
+.images h3{
+  color: var(--nf-sunrise-soft);
+}
+.images h3,
+.images h1 {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.plant-image,
+.bark-pieces {
+  padding: 15px;
+  margin: 0;
+
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
+
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+.img1 {
+  width: 552px;
+  max-width: 100%;
+  border-radius: 30px;
+}
 /*why section*/
 .why-wrapper{
-  width:fit-content;
+  width:100%;
+  width: 1150px;
   margin:80px auto 60px;
 
   background:rgba(255,255,255,0.35);
@@ -390,7 +477,8 @@ nav {
 }
 
 .what-wrapper{
-  width:max-content;
+  width:min(95%, 1300px);
+  max-width: 100%;
 
   margin:120px auto 100px;
 
@@ -429,14 +517,16 @@ nav {
   margin-bottom: 20px;
 }
 
-.what-does-container{
-  display:flex;
-  justify-content:center;
-  align-items:stretch;
-  gap:18px;
-  flex-wrap:wrap;
+.what-does-container {
+  width: 100%;
 
-  margin-top:20px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
 }
 
 .what-does-container .small-card{
@@ -492,24 +582,22 @@ nav {
   color:var(--nf-text-dark);
 }
 
-.flow1-wrapper{
-  width:max-content;
+.flow1-wrapper {
+  width: 100%;
+  max-width: 100%;
 
-  margin:40px auto 0;
+  margin: 40px auto 0;
+  padding: 28px;
 
-  background:rgba(255,255,255,0.22);
+  background: rgba(255, 255, 255, 0.22);
 
-  backdrop-filter:blur(18px);
-  -webkit-backdrop-filter:blur(18px);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 
-  border:1px solid rgba(255,255,255,0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 35px;
 
-  border-radius:35px;
-
-  padding:28px;
-
-  box-shadow:
-  0 18px 40px rgba(15,23,42,0.08);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
 }
 
 .glass-card1{
@@ -621,7 +709,9 @@ nav {
 
 .glass-card-eco{
   margin-top: 20px;
-  width: 560px;
+  width: 1000px;
+
+  min-height: 280px;
 
   padding:35px;
 
@@ -640,35 +730,45 @@ nav {
   0 18px 40px rgba(15,23,42,0.12);
 }
 
-.glass-card2{
-  width:240px;
-  min-height:210px;
-  padding:35px;
+.glass-card2 {
+  width: auto;
+  min-width: 0;
 
-  border-radius:30px;
+  flex: 1 1 220px;
 
-  background:rgba(255,255,255,0.35);
+  min-height: 210px;
 
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
+  padding: 35px;
 
-  border:1px solid rgba(255,255,255,0.7);
+  border-radius: 30px;
 
-  box-shadow:0 18px 40px rgba(15,23,42,0.12);
+  background: rgba(255, 255, 255, 0.35);
 
-  flex:1 1 240px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.glass-card2 h2,
+.glass-card2 h4,
+.glass-card2 p {
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .glass-card-eco h5{
   text-align: center;
   justify-content: center;
-  color: var(--nf-blue-soft);
+  color: var(--nf-blue);
   margin-bottom: 10px;
 }
 
-.glass-card-eco{
-  width:1000px;
-  min-height:260px;
+.glass-card-eco h1{
+  font-size: 40px;
+  text-align: center;
 }
 
 .small-card h4{
@@ -681,8 +781,8 @@ nav {
 }
 
 .small-card{
-  width:240px;
-  min-height:210px;
+  width:auto;
+  min-width:0;
   max-width: 100%;
 }
 

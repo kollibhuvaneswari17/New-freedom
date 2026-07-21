@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Branches</title>
+    <title>New Freedom Life | Five Ecosystem Branches</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -11,12 +11,18 @@
     />
 
     <link rel="stylesheet" href="branches-style.css" />
+    <link rel="icon"type="image/png" href="./assests/logo.png">
   </head>
 
   <body>
 <nav>
+  <div class="brand">
+    <div class="nav-logo">
+      <img src="./assests/logo.png" alt="logo">
+    </div>
     <div class="logotext">
       NEW FREEDOM LIFE ECOSYSTEM
+    </div>
     </div>
     <button class="menu-toggle" aria-label="Toggle navigation">
   <span></span>
@@ -57,35 +63,14 @@
     <h2>Five Connected Operating Branches</h2>
 
     <p>
-      The ecosystem combines technology, treatment,
-      training, infrastructure, and drug development
-      into one connected recovery model.
+      New Freedom Life is organized across five operating branches. Each has a distinct mandate, but all five are designed to work together as one integrated recovery infrastructure model
     </p>
 
-    <div class="info-points">
+    <p>Technology provides continuity between visits. Treatment centers on medically supervised ibogaine care inside a residential, monitored setting. Training establishes shared standards. Real estate governs premium sites and fractional ownership structures. Drug development advances ibogaine pathways, metabolite research, and analog discovery.</p>
 
-      <div class="info-box">
-        <h4>Technology Layer</h4>
-        <p>NF-167 supports continuity between sessions.</p>
-      </div>
-
-      <div class="info-box">
-        <h4>Clinical Operations</h4>
-        <p>
-          Treatment systems built around supervision
-          and care continuity.
-        </p>
-      </div>
-
-      <div class="info-box">
-        <h4>Long-Term Development</h4>
-        <p>
-          Research and infrastructure designed
-          for future scalability.
-        </p>
-      </div>
-
-    </div>
+    <p>
+      Use the visual to the right to explore how each branch functions within the larger ecosystem.
+    </p>
   </div>
 
   <!-- RIGHT SIDE VISUAL -->
@@ -102,28 +87,28 @@
 
       <!-- CARDS -->
 
-      <div class="card card1">
+      <div class="card card1" data-branch="technology">
         <div class="glass">
           <h3>Technology</h3>
           <p>Technology provides the continuous operating layer.</p>
         </div>
       </div>
 
-      <div class="card card2">
+      <div class="card card2" data-branch="treatment">
         <div class="glass">
           <h3>Treatment</h3>
           <p>Treatment centers on clinically supervised ibogaine care.</p>
         </div>
       </div>
 
-      <div class="card card3">
+      <div class="card card3" data-branch="training">
         <div class="glass">
           <h3>Training</h3>
           <p>Training protects consistency across teams and sites.</p>
         </div>
       </div>
 
-      <div class="card card4">
+      <div class="card card4" data-branch="realestate">
         <div class="glass">
           <h3>Real Estate</h3>
           <p>
@@ -133,7 +118,7 @@
         </div>
       </div>
 
-      <div class="card card5">
+      <div class="card card5" data-branch="drug-development">
         <div class="glass">
           <h3>Drug Development</h3>
           <p>
@@ -144,8 +129,255 @@
       </div>
 
     </section>
+    
 
   </div>
+  <!-- BRANCH INFORMATION MODAL -->
+
+<div class="branch-modal" id="branchModal">
+
+  <div class="modal-content">
+
+    <button class="modal-close" id="modalClose">
+      &times;
+    </button>
+
+    <p class="modal-tag">OPERATING BRANCH</p>
+
+    <h2 id="modalTitle">Technology</h2>
+
+    <p id="modalDescription">
+      NF-167 gives the ecosystem a digital operating layer so signals, check-ins, and follow-up do not disappear between formal moments of care
+    </p>
+
+    <div class="modal-details">
+
+      <div class="detail-box">
+        <h4>MAIN JOB</h4>
+        <p id="modalRole">
+          Digital operations
+        </p>
+      </div>
+
+      <div class="detail-box">
+        <h4>SUPPORTS</h4>
+        <p id="modalFocus">
+          People in care and care teams
+        </p>
+      </div>
+      <div class="detail-box">
+        <h4>WHY IT MATTERS</h4>
+        <p  id="modalWhy">
+          More continuity between visits
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<script>
+
+const branchData = {
+
+  technology: {
+
+    title: "Technology",
+
+    description:
+      "NF-167 gives the ecosystem a digital operating layer so signals, check-ins, and follow-up do not disappear between formal moments of care",
+
+    role:
+      "Digital operations",
+
+    focus:
+      "People in care and care teams",
+
+    why:
+      "More continutity between visits"
+  },
+
+
+  treatment: {
+
+    title: "Treatment",
+
+    description:
+      "This branch brings together residential treatment, physician supervision, clinical screening, cardiac review, and NF-167 continuity before and after the procedure.",
+
+    role:
+      "Clincial care",
+
+    focus:
+    "People in treatment and medical teams",
+
+    why:
+      "A safer, more connected care experience"
+  },
+
+
+  training: {
+
+    title: "Training",
+
+    description:
+      "This branch establishes shared language, workflows, and safety standards so the care model can scale without losing discipline.",
+
+    role:
+      "Standards and training",
+
+    focus:
+      "Staff, operators, and partners",
+
+    why:
+      "Shared standards across the system"
+  },
+
+
+  realestate: {
+
+    title: "Real Estate",
+
+    description:
+      "This branch covers premium recovery properties, treatment-linked enviornments, and the fractional ownership framework behind them",
+
+    role:
+      "Property and ownership",
+
+    focus:
+      "Residents, operators, and ecosystem participants",
+
+    why:
+      "Premium environments with long-term assest alignment"
+  },
+
+
+  "drug-development": {
+
+    title: "Drug Development",
+
+    description:
+      "This branch advances iboganine R&D across natural-source, semi-synthetic, synthetic, biosynthetic and analog development pathways with an eye toward safer and more scalable therapeutic options",
+
+    role:
+      "Ibogaine R&D",
+
+    focus:
+      "Reserch teams and future therapies",
+
+    why:
+      "Future therapeutic pathways and next-generation compounds"
+  }
+
+};
+
+
+// GET ELEMENTS
+
+const cards = document.querySelectorAll(".card");
+
+const modal = document.getElementById("branchModal");
+
+const modalClose = document.getElementById("modalClose");
+
+const modalTitle = document.getElementById("modalTitle");
+
+const modalDescription =
+  document.getElementById("modalDescription");
+
+const modalRole =
+  document.getElementById("modalRole");
+
+const modalFocus =
+  document.getElementById("modalFocus");
+
+const modalWhy = 
+  document.getElementById("modalWhy");
+
+
+// CLICK ON CARD
+
+cards.forEach(card => {
+
+  card.addEventListener("click", () => {
+
+    const branchName =
+      card.dataset.branch;
+
+    const data =
+      branchData[branchName];
+
+
+    modalTitle.textContent =
+      data.title;
+
+    modalDescription.textContent =
+      data.description;
+
+    modalRole.textContent =
+      data.role;
+
+    modalFocus.textContent =
+      data.focus;
+
+    modalWhy.textContent = 
+      data.why;
+
+
+    modal.classList.add("active");
+
+    document.body.style.overflow =
+      "hidden";
+
+  });
+
+});
+
+
+// CLOSE BUTTON
+
+modalClose.addEventListener("click", closeModal);
+
+
+// CLICK OUTSIDE MODAL
+
+modal.addEventListener("click", (event) => {
+
+  if(event.target === modal){
+
+    closeModal();
+
+  }
+
+});
+
+
+// ESC KEY
+
+document.addEventListener("keydown", (event) => {
+
+  if(event.key === "Escape"){
+
+    closeModal();
+
+  }
+
+});
+
+
+// CLOSE FUNCTION
+
+function closeModal(){
+
+  modal.classList.remove("active");
+
+  document.body.style.overflow =
+    "";
+
+}
+
+</script>
 </section>
 
 <!--visual overview section-->
@@ -184,6 +416,11 @@
     <div class="branch-step">
       <h3 class="glass">Reach Support Faster</h3>
     </div>
+    <div class="buttons">
+      <span class="btn">CHECK-INS</span>
+      <span class="btn">ALERTS</span>
+      <span class="btn">CONTINUITY</span>
+    </div>
   </div>
   <a class="blue-link" href="technology.html">Learn more about Technology</a>
 </section>
@@ -209,6 +446,11 @@
     <div class="branch-step">
       <h3 class="glass">NF-167 Follow-Through</h3>
     </div>
+    <div class="buttons">
+      <span class="btn">SCREENING</span>
+      <span class="btn">SAFETY</span>
+      <span class="btn">SUPPORT</span>
+    </div>
   </div>
   <a class="blue-link" href="./ibogaine.html">Learn more about Ibogaine</a>
 </section>
@@ -229,6 +471,11 @@
 
     <div class="branch-step">
       <h3 class="glass">Operations playbook</h3>
+    </div>
+    <div class="buttons">
+      <h6 class="btn">PROTOCOL</h6>
+      <h6 class="btn">CONSISTENCY</h6>
+      <h6 class="btn">SCALE</h6>
     </div>
   </div>
   <a class="blue-link" href="./training.html">Learn more about Training</a>
@@ -257,7 +504,11 @@
     <div class="branch-step">
       <h3 class="glass">Shared <br>Ownership</h3>
     </div>
-
+      <div class="buttons">
+      <span class="btn">PROPERTY</span>
+      <span class="btn">SHARED OWNERSHIP</span>
+      <span class="btn">OWNERSHIP</span>
+    </div>
   </div>
   <a class="orange-link" href="./realestate.html">Learn more about Real Estate</a>
 </section>
@@ -283,6 +534,11 @@
 
     <div class="branch-step">
       <h3 class="glass">Analog <br>Development</h3>
+    </div>
+    <div class="buttons">
+      <span class="btn">IBOGAINE</span>
+      <span class="btn">ANALOGS</span>
+      <span class="btn">RESEARCH</span>
     </div>
   </div>
   <a class="orange-link" href="./ibogaine.html">Learn more about Ibogaine</a>

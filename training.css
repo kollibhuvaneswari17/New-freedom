@@ -31,7 +31,7 @@ nav {
   top: 0;
   z-index: 1000;
   width: 100%;
-  padding: 14px 60px;
+  padding: 8px 60px;
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -40,6 +40,26 @@ nav {
   align-items: center;
   border-bottom: 1px solid rgba(148, 163, 184, 0.3);
 }
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo img{
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+
+.logotext {
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+
 .nav-links {
   display: flex;
   gap: 30px;
@@ -262,7 +282,7 @@ nav {
 }
 
 .what-does-container{
-  display:flex;
+  display:inline-flex;
   justify-content:center;
   align-items:stretch;
   gap:18px;
@@ -325,7 +345,9 @@ nav {
 }
 
 .flow1-wrapper{
-  width:100%;
+  width:fit-content;
+  
+  max-width: 100%;
 
   margin:40px auto 0;
 
@@ -609,8 +631,17 @@ nav {
 .glass-card-eco h5{
   text-align: center;
   justify-content: center;
-  color: var(--nf-blue-soft);
+  color: var(--nf-blue);
   margin-bottom: 10px;
+}
+
+.glass-card-eco h1{
+  text-align: center;
+  font-size: 45px;
+}
+.glass-card-eco p{
+  text-align: center;
+
 }
 
 .glass-card-eco{
